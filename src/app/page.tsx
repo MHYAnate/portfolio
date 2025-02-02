@@ -17,7 +17,13 @@ export default function Portfolio() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [activeSection, setActiveSection] = useState("home");
 	const [isScrolled, setIsScrolled] = useState(false);
+	const [isVisible, setIsVisible] = useState(false)
+
 	const skillsRef = useRef<HTMLDivElement>(null);
+
+	useEffect(() => {
+    setIsVisible(true)
+  }, [])
 
 	const [qNav, setQNav] = useState("");
 
@@ -288,10 +294,10 @@ export default function Portfolio() {
 								className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
 							/>
 						</div>
-						<h1 className="text-5xl md:text-7xl font-bold mb-4 animate-fade-in-up font-[family-name:var(--Poppins-Bold)]">
+						<h1 className={`text-5xl md:text-7xl font-bold mb-4 animate-fade-in-up font-[family-name:var(--Poppins-Bold)] ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
 							Mohammed Hayatudeen Yusuf
 						</h1>
-						<p className="text-xl md:text-2xl mb-8 animate-fade-in-up animation-delay-300 font-[family-name:var(--Poppins-SemiBold)]">
+						<p className={`text-xl md:text-2xl mb-8 animate-fade-in-up animation-delay-300 font-[family-name:var(--Poppins-SemiBold)] ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
 							Tech Entrepreneur | Project Engineer | Full-Stack Developer |
 							AI-Powered Development Engineer
 						</p>
