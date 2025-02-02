@@ -60,9 +60,9 @@ export default function SkillsComponent() {
             "TypeScript",
           ].map((skill, index) => (
             <span
-              key={skill}
+              key={index}
               className={`bg-black text-white px-3 py-1 rounded-full text-sm  font-[family-name:var(--Poppins-Regular)]`}
-              style={{ animationDelay: `${index * 100}ms` }}
+            
             >
               {skill}
             </span>
@@ -82,9 +82,9 @@ export default function SkillsComponent() {
           {["Node.js", "Express.js", "TypeScript"].map(
             (skill, index) => (
               <span
-                key={skill}
+                key={index}
                 className={`bg-black text-white px-3 py-1 rounded-full text-sm font-[family-name:var(--Poppins-Regular)]`}
-                style={{ animationDelay: `${index * 100}ms` }}
+                
               >
                 {skill}
               </span>
@@ -117,9 +117,8 @@ export default function SkillsComponent() {
             "v0",
           ].map((skill, index) => (
             <span
-              key={skill}
+              key={index}
               className={`bg-black text-white px-3 py-1 rounded-full text-sm font-[family-name:var(--Poppins-Regular)]`}
-              style={{ animationDelay: `${index * 100}ms` }}
             >
               {skill}
             </span>
