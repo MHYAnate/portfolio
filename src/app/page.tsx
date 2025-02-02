@@ -317,7 +317,7 @@ export default function Portfolio() {
 						</div>
 					</div>
 					<div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-						<a href="#about" className="text-white">
+						<a onClick={()=>setQNav("about")} className="text-white">
 							<svg
 								className="w-6 h-6"
 								fill="none"
