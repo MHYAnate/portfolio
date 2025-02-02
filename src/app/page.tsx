@@ -37,8 +37,6 @@ export default function Portfolio() {
 
 	const q8 = useRef<HTMLDivElement>(null);
 
-	const qServivice = useRef<HTMLDivElement>(null);
-
 	const qView2 = () => q2.current?.scrollIntoView({ behavior: "smooth" });
 
 	const qView3 = () => q3.current?.scrollIntoView({ behavior: "smooth" });
@@ -259,7 +257,7 @@ export default function Portfolio() {
 										: "text-black hover:bg-gray-200"
 								} transition-colors duration-300`}
 								onClick={() => {
-									toggleMenu(), setQNav(item.toLowerCase());
+									toggleMenu(); setQNav(item.toLowerCase());
 								}}
 							>
 								{item}
