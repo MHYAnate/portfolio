@@ -285,7 +285,7 @@ export default function Portfolio() {
 						<div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center animate-ken-burns"></div>
 					</div>
 					<div className="text-center relative z-10 flex flex-col items-center">
-						<div className="w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-white shadow-lg">
+						<div className={`w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-white shadow-lg transition-all duration-1000 ease-out delay-300 transform ${isVisible ? 'translate-x-0 opacity-100' : 'opacity-0'}`}>
 							<Image
 								src={"/pic.jpg"}
 								alt={` image`}
@@ -294,10 +294,10 @@ export default function Portfolio() {
 								className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
 							/>
 						</div>
-						<h1 className={`text-5xl md:text-7xl font-bold mb-4 animate-fade-in-up font-[family-name:var(--Poppins-Bold)] ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+						<h1 className={`text-5xl md:text-7xl font-bold mb-4 animate-fade-in-up font-[family-name:var(--Poppins-Bold)] transition-all duration-1000 ease-out delay-300 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
 							Mohammed Hayatudeen Yusuf
 						</h1>
-						<p className={`text-xl md:text-2xl mb-8 animate-fade-in-up animation-delay-300 font-[family-name:var(--Poppins-SemiBold)] ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
+						<p className={`text-xl md:text-2xl mb-8 animate-fade-in-up animation-delay-300 transition-all duration-1000 ease-out delay-300 transform font-[family-name:var(--Poppins-SemiBold)] ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
 							Tech Entrepreneur | Project Engineer | Full-Stack Developer |
 							AI-Powered Development Engineer
 						</p>
