@@ -285,7 +285,7 @@ export default function Portfolio() {
 						<div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center animate-ken-burns"></div>
 					</div>
 					<div className="text-center relative z-10 flex flex-col items-center">
-						<div className={`w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-white shadow-lg transition-all duration-1000 ease-out delay-300 transform ${isVisible ? 'translate-x-0 opacity-100' : 'opacity-0'}`}>
+						<div className={`w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-white shadow-lg transition-all duration-1000 ease-out delay-1000 transform ${isVisible ? 'translate-x-0 opacity-100' : 'opacity-0'}`}>
 							<Image
 								src={"/pic.jpg"}
 								alt={` image`}
