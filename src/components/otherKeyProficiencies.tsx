@@ -1,14 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react";
-import ImageDesignComponent from "./imageDesign";
-import DevToolsComponent from "./devTool";
-import DbComponent from "./db";
-import KeyProficienciesComponent from "./otherKeyProficiencies";
-import AiToolsComponent from "./aiToolsLibraries";
-import BackEndComponent from "./backEnd";
-import FrontEndComponent from "./frontEnd";
 
-export default function SkillsComponent() {
+export default function KeyProficienciesComponent() {
 	const featureRefs = useRef<(HTMLDivElement | null)[]>([]);
 
 	useEffect(() => {
@@ -39,28 +32,30 @@ export default function SkillsComponent() {
 	}, []);
 
 	return (
-		<div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-			<h2 className="text-3xl font-bold mb-12 text-center font-[family-name:var(--Poppins-Bold)]">
-				Technical Skills
-			</h2>
-			<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+		<div className="bg-gray-100 p-6 rounded-lg shadow-lg">
+			<h3 className="text-xl font-semibold mb-4 font-[family-name:var(--Poppins-SemiBold)]">
+				Other Key Proficiencies
+			</h3>
+			<div className="flex flex-wrap gap-2">
 				{[
-					<FrontEndComponent />,
-					<BackEndComponent />,
-					<AiToolsComponent />,
-					<KeyProficienciesComponent />,
-					<DbComponent />,
-					<DevToolsComponent />,
-					<ImageDesignComponent />,
+					"Git",
+					"GitHub",
+					"Jest",
+					"Performance Optimization",
+					"Responsive design",
+					"PWA development",
+					"Cross-platform compatibility",
+					"Scalable architecture design",
 				].map((skill, index) => (
-					<div
+					<span
 						ref={(el: HTMLDivElement | null) => {
 							if (el) featureRefs.current[index] = el;
 						}}
 						key={index}
+						className={`bg-black text-white px-3 py-1 rounded-full text-sm  font-[family-name:var(--Poppins-Regular)]`}
 					>
 						{skill}
-					</div>
+					</span>
 				))}
 			</div>
 		</div>

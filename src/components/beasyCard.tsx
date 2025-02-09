@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 
-export default function ILUDcomponent() {
+export default function BEasycomponent() {
 	const featureRefs = useRef<(HTMLDivElement | null)[]>([]);
 
 	useEffect(() => {
@@ -36,7 +36,7 @@ export default function ILUDcomponent() {
 		<div className="bg-white rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl transform hover:scale-105">
 			<div className="relative">
 				<Image
-					src={"/c2.jpg"}
+					src={"/white.gif"}
 					alt={` image`}
 					width={400}
 					height={300}
@@ -54,10 +54,9 @@ export default function ILUDcomponent() {
 				</div>
 			</div>
 			<div className="p-6">
-				<h3 className="text-xl font-semibold mb-2">ILUD</h3>
+				<h3 className="text-xl font-semibold mb-2">BEasy</h3>
 				<p className="text-gray-700 mb-4">
-					A React application showcasing advanced out-of-the-box development
-					skills and problem-solving.
+					A React application that combines an Ecommerce marketing platform and a Job board marketing platform showcasing a simplified problem-solving approach to real life adaptation cases in my current region Nigeria.
 				</p>
 				<div className="flex flex-wrap gap-2">
 					<div className="p-6">
@@ -78,6 +77,7 @@ export default function ILUDcomponent() {
 								"GitHub",
 								"Gemini",
 								"ChatGpt",
+								"Hand Break",
 							].map((skill, index) => (
 								<span
 									ref={(el: HTMLDivElement | null) => {

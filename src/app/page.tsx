@@ -5,7 +5,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Sspot1Component from "@/components/sspot1Card";
 import RagComponent from "@/components/ragCard";
-import ILUDcomponent from "@/components/iludCard";
+import BEasycomponent from "@/components/beasyCard";
 import SkillsComponent from "@/components/skills";
 import EducationComponent from "@/components/educaion";
 import ExpComponent from "@/components/exp";
@@ -346,7 +346,7 @@ export default function Portfolio() {
 						<div className="grid grid-cols-1 md:grid-cols-3 gap-12">
 							<Sspot1Component />
 							<RagComponent />
-							<ILUDcomponent />
+							<BEasycomponent />
 						</div>
 					</div>
 				</section>
