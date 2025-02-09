@@ -45,21 +45,21 @@ export default function SkillsComponent() {
 			</h2>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 				{[
-					<FrontEndComponent />,
-					<BackEndComponent />,
-					<AiToolsComponent />,
-					<KeyProficienciesComponent />,
-					<DbComponent />,
-					<DevToolsComponent />,
-					<ImageDesignComponent />,
-				].map((skill, index) => (
+					{ id: "frontend", component: <FrontEndComponent /> },
+					{ id: "backend", component: <BackEndComponent /> },
+					{ id: "ai-tools", component: <AiToolsComponent /> },
+					{ id: "key-proficiencies", component: <KeyProficienciesComponent /> },
+					{ id: "db", component: <DbComponent /> },
+					{ id: "dev-tools", component: <DevToolsComponent /> },
+					{ id: "image-design", component: <ImageDesignComponent /> },
+				].map((item, index) => (
 					<div
 						ref={(el: HTMLDivElement | null) => {
 							if (el) featureRefs.current[index] = el;
 						}}
-						key={index}
+						key={item.id}
 					>
-						{skill}
+						{item.component}
 					</div>
 				))}
 			</div>
