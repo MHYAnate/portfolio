@@ -44,14 +44,43 @@ export default function SkillsComponent() {
 				Technical Skills
 			</h2>
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-				<FrontEndComponent />
-				<BackEndComponent />
-				<AiToolsComponent />
-				<KeyProficienciesComponent />
-				<DbComponent />
-				<DevToolsComponent />
-				<ImageDesignComponent />
+				{[
+					{ id: "frontend", component: <FrontEndComponent /> },
+					{ id: "backend", component: <BackEndComponent /> },
+					{ id: "ai-tools", component: <AiToolsComponent /> },
+					{ id: "key-proficiencies", component: <KeyProficienciesComponent /> },
+					{ id: "db", component: <DbComponent /> },
+					{ id: "dev-tools", component: <DevToolsComponent /> },
+					{ id: "image-design", component: <ImageDesignComponent /> },
+				].map((item, index) => (
+					<div
+						ref={(el: HTMLDivElement | null) => {
+							if (el) featureRefs.current[index] = el;
+						}}
+						key={item.id}
+					>
+						{item.component}
+					</div>
+				))}
 			</div>
+			<style jsx>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .feature-card {
+          opacity: 0;
+        }
+        .feature-visible {
+          animation: fadeInUp 0.5s ease-out forwards;
+        }
+      `}</style>
 		</div>
 	);
 }

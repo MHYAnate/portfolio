@@ -50,6 +50,24 @@ export default function BackEndComponent() {
         </span>
       ))}
     </div>
+    <style jsx>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .feature-card {
+          opacity: 0;
+        }
+        .feature-visible {
+          animation: fadeInUp 0.5s ease-out forwards;
+        }
+      `}</style>
   </div>
 	);
 }
