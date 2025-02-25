@@ -142,7 +142,7 @@ export default function Portfolio() {
 									isScrolled ? "text-black" : "text-white"
 								}`}
 							>
-								MHYusuf
+								MHY
 							</a>
 						</div>
 						<div className="hidden md:block">
