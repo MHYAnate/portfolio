@@ -24,7 +24,7 @@ export default function AboutComponent() {
     </p>
     <p className="text-lg mb-6 leading-relaxed font-[family-name:var(--Poppins-SemiBold)]">
       <span className="text-lg mb-6 leading-relaxed font-[family-name:var(--Poppins-Bold)]">
-        Founder of Sspot1 Ventures (Service Spot 1),{" "}
+        Founder of Sspot1 Ventures,{" "}
       </span>{" "}
       a full-stack web application that connects vendors with clients,
       demonstrating strong entrepreneurial spirit and technical
