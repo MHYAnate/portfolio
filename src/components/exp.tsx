@@ -8,10 +8,10 @@ export default function ExpComponent() {
     </h2>
     <div className="bg-white p-6 rounded-lg shadow-lg">
       <h3 className="text-2xl font-semibold mb-2 font-[family-name:var(--Poppins-SemiBold)]">
-        Senior Developer, Project Engineer and Founder
+        Software Developer, Project Engineer and Founder
       </h3>
       <h4 className="text-xl mb-2 font-[family-name:var(--Poppins-SemiBold)]">
-        Sspot1 Ventures (Service Spot 1) |
+        Sspot1 Ventures |
         <a
           className="text-xl mb-2 font-[family-name:var(--Poppins-Regular)]"
           href="https:// www.sspot1.com"
@@ -26,7 +26,7 @@ export default function ExpComponent() {
       {/* <p className="text-sm text-gray-600 mb-4">Dec 2024 - PRESENT</p> */}
       <ul className="list-disc list-inside space-y-2 text-gray-800 font-[family-name:var(--Poppins-Regular)]">
         <li>
-          Developed and launched Sspot1 (Service Spot 1), a full-stack
+          Developed and launched Sspot1, a full-stack
           application connecting vendors with clients, revolutionizing
           service procurement.
         </li>

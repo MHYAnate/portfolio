@@ -56,7 +56,7 @@ export default function Sspot1Component() {
 			</div>
 			<div className="p-6">
 				<h3 className="text-xl font-semibold mb-2 font-[family-name:var(--Poppins-SemiBold)]">
-					Sspot1 (Service Spot 1)
+					Sspot1
 				</h3>
 				<p className="text-gray-700 mb-4 font-[family-name:var(--Poppins-Regular)]">
 					A full-stack application connecting vendors with clients,

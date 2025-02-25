@@ -56,7 +56,7 @@ export default function BEasycomponent() {
 			<div className="p-6">
 				<h3 className="text-xl font-semibold mb-2">BEasy</h3>
 				<p className="text-gray-700 mb-4">
-					A React application that combines an Ecommerce marketing platform and a Job board marketing platform showcasing a simplified problem-solving approach to real life adaptation cases in my current region Nigeria.
+					A full stack model in React that combines an Ecommerce marketing platform and a Job board marketing platform, providing a simplified  yet effective approach, an inter linked up directories: ILUD, the next phase to Sspot1 intergration. so as to burst the labor force in my current region Nigeria and africa at large.
 				</p>
 				<div className="flex flex-wrap gap-2">
 					<div className="p-6">
