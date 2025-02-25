@@ -14,7 +14,7 @@ export default function ExpComponent() {
         Sspot1 Ventures |
         <a
           className="text-xl mb-2 font-[family-name:var(--Poppins-Regular)]"
-          href="www.sspot1.com"
+          href="https://www.sspot1.com"
         >
           {" "}
           www.sspot1.com
