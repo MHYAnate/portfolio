@@ -36,7 +36,7 @@ export default function BEasycomponent() {
 		<div className="bg-white rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl transform hover:scale-105">
 			<div className="relative">
 				<Image
-					src={"/white.gif"}
+					src={"/be.jpg"}
 					alt={` image`}
 					width={400}
 					height={300}
