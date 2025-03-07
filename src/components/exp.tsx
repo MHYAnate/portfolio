@@ -27,7 +27,7 @@ export default function ExpComponent() {
       <ul className="list-disc list-inside space-y-2 text-gray-800 font-[family-name:var(--Poppins-Regular)]">
         <li>
           Developed and launched Sspot1, a full-stack
-          application connecting vendors with clients, revolutionizing
+          progressive web application connecting vendors with clients, revolutionizing
           service procurement.
         </li>
         <li>
@@ -44,8 +44,8 @@ export default function ExpComponent() {
         </li>
         <li>
           Managed all aspects of the project lifecycle, from concept
-          ideation to deployment and post-launch support, as the sole
-          senior developer and project engineer ensuring timely delivery
+          ideation to deployment and post-launch support within three months for development plus about three weeks for ideation, as the sole
+          software developer and project engineer ensuring timely delivery
           and adherence to best practices.
         </li>
       </ul>
