@@ -59,9 +59,18 @@ export default function Sspot1Component() {
 					Sspot1
 				</h3>
 				<p className="text-gray-700 mb-4 font-[family-name:var(--Poppins-Regular)]">
-					A full-stack application connecting vendors with clients,
-					revolutionizing service procurement.
+					A full-stack progressive web application  connecting vendors with clients,
+					revolutionizing service procurement,that serves as a triple-purpose hub enabling vendors to
 				</p>
+				<ul className="list-disc list-inside space-y-2 text-gray-800 font-[family-name:var(--Poppins-Regular)]">
+        <li className="font-[family-name:var(--Poppins-Regular)]">
+          {` offer repair, maintenance, and specialized services to clients`}
+        </li>
+        <li className="font-[family-name:var(--Poppins-Regular)]">
+          {`post job openings for skilled peers`}
+        </li>
+        <li className="font-[family-name:var(--Poppins-Regular)]">{`lease or sell underutilized tools and equipment to fellow vendors—all within a unified platform `}</li>
+      </ul>
 				<div className="flex flex-wrap gap-2">
 					<div className="p-6">
 			
