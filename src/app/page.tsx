@@ -138,7 +138,7 @@ export default function Portfolio() {
 						<div className="flex items-center">
 							<a
 								href="#home"
-								className={`text-2xl font-bold font-[family-name:var(--ProtestGuerrilla)] transition-colors duration-300 ${
+								className={`cursor-pointer text-2xl font-bold font-[family-name:var(--ProtestGuerrilla)] transition-colors duration-300 ${
 									isScrolled ? "text-black" : "text-white"
 								}`}
 							>
@@ -159,7 +159,7 @@ export default function Portfolio() {
 									<div
 										key={item}
 										onClick={() => setQNav(item.toLowerCase())}
-										className={`px-3 py-2 rounded-md text-sm font-medium font-[family-name:var(--Poppins-SemiBold)] transition-colors duration-300 ${
+										className={`px-3 py-2 cursor-pointer rounded-md text-sm font-medium font-[family-name:var(--Poppins-SemiBold)] transition-colors duration-300 ${
 											activeSection === item.toLowerCase()
 												? "bg-black text-white"
 												: isScrolled
@@ -175,7 +175,7 @@ export default function Portfolio() {
 						<div className="md:hidden">
 							<button
 								onClick={toggleMenu}
-								className={`inline-flex items-center justify-center p-2 rounded-md font-[family-name:var(--Poppins-SemiBold)] ${
+								className={`cursor-pointer inline-flex items-center justify-center p-2 rounded-md font-[family-name:var(--Poppins-SemiBold)] ${
 									isScrolled
 										? "text-black hover:text-white hover:bg-black"
 										: "text-white hover:text-black hover:bg-white"
@@ -229,7 +229,7 @@ export default function Portfolio() {
 						].map((item) => (
 							<div
 								key={item}
-								className={`block px-3 py-2 rounded-md text-base font-medium  font-[family-name:var("--Poppins-SemiBold)]${
+								className={`cursor-pointer block px-3 py-2 rounded-md text-base font-medium  font-[family-name:var("--Poppins-SemiBold)]${
 									activeSection === item.toLowerCase()
 										? "bg-black text-white"
 										: "text-black hover:bg-gray-200"
@@ -257,7 +257,7 @@ export default function Portfolio() {
 						<div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center animate-ken-burns"></div>
 					</div>
 					<div className="text-center relative z-10 flex flex-col items-center">
-						<div className={`w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-white shadow-lg transition-all duration-1000 ease-out delay-1000 transform ${isVisible ? 'translate-x-0 opacity-100' : 'opacity-0'}`}>
+						<div className={`cursor-pointer w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-white shadow-lg transition-all duration-1000 ease-out delay-1000 transform ${isVisible ? 'translate-x-0 opacity-100' : 'opacity-0'}`}>
 							<Image
 								src={"/pic.jpg"}
 								alt={` image`}
@@ -276,19 +276,19 @@ export default function Portfolio() {
 						<div className="flex justify-center space-x-4 animate-fade-in-up animation-delay-600">
 							<div
 								onClick={() => setQNav("contact")}
-								className="bg-white text-black px-6 pt-3 pb-2 rounded-full hover:bg-gray-200 transition-colors duration-300 transform hover:scale-105 font-[family-name:var(--Poppins-Bold)]"
+								className="bg-white cursor-pointer text-black px-6 pt-3 pb-2 rounded-full hover:bg-gray-200 transition-colors duration-300 transform hover:scale-105 font-[family-name:var(--Poppins-Bold)]"
 							>
 								Get in Touch
 							</div>
 							<div
 							onClick={() => setQNav("projects")}
-								className="border-2 border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition-colors duration-300 transform hover:scale-105 font-[family-name:var(--Poppins-Bold)]"
+								className=" cursor-pointer border-2 border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition-colors duration-300 transform hover:scale-105 font-[family-name:var(--Poppins-Bold)]"
 							>
 								View Projects
 							</div>
 						</div>
 					</div>
-					<div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+					<div className="cursor-pointer absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
 						<a onClick={()=>setQNav("about")} className="text-white">
 							<svg
 								className="w-6 h-6"
