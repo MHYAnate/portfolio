@@ -11,13 +11,13 @@ export default function EducationComponent() {
 					Self-Taught Developer
 				</h3>
 				<p className="text-gray-600 mb-4 font-[family-name:var(--Poppins-Regular)]">
-					oct 2022 - present
+					october 2022 - present
 				</p>
 				<h3 className="text-xl font-semibold mb-2 font-[family-name:var(--Poppins-SemiBold)]">
 					B.tech Urban and Regional Planning
 				</h3>
 				<p className="text-gray-600 font-[family-name:var(--Poppins-Regular)]">
-					Federal University of Technology Minna, Nov 2019
+					Federal University of Technology Minna Nigeria, Nov 2019
 				</p>
 			</div>
 		</div>
