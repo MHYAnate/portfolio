@@ -11,7 +11,7 @@ export default function EducationComponent() {
 					Self-Taught Developer
 				</h3>
 				<p className="text-gray-600 mb-4 font-[family-name:var(--Poppins-Regular)]">
-					May 2021 - present
+					oct 2022 - present
 				</p>
 				<h3 className="text-xl font-semibold mb-2 font-[family-name:var(--Poppins-SemiBold)]">
 					B.tech Urban and Regional Planning
