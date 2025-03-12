@@ -38,6 +38,7 @@ export default function ImageDesignComponent() {
 			</h3>
 			<div className="flex flex-wrap gap-2">
 				{[
+					"Deepai",
 					"Hand Break",
 					"Favicon",
 					"Krita",
