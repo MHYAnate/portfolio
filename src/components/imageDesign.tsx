@@ -45,7 +45,7 @@ export default function ImageDesignComponent() {
 					"GIMP",
 					"Inkscape",
 					"Viggle.ai",
-					"inVideo"
+					"invideo AI"
 				].map((skill, index) => (
 					<span
 						ref={(el: HTMLDivElement | null) => {
