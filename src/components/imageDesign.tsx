@@ -34,7 +34,7 @@ export default function ImageDesignComponent() {
 	return (
 		<div className="bg-gray-100 p-6 rounded-lg shadow-lg">
 			<h3 className="text-xl font-semibold mb-4 font-[family-name:var(--Poppins-SemiBold)]">
-				Design and Image Processing Tools
+				Design, Image and Video Processing Tools
 			</h3>
 			<div className="flex flex-wrap gap-2">
 				{[
@@ -45,6 +45,7 @@ export default function ImageDesignComponent() {
 					"GIMP",
 					"Inkscape",
 					"Viggle.ai",
+					"inVideo"
 				].map((skill, index) => (
 					<span
 						ref={(el: HTMLDivElement | null) => {
