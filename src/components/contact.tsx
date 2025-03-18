@@ -64,7 +64,7 @@ export default function ContactComponent() {
 					<span className="text-sm font-medium">GitHub</span>
 				</a>
 				<a
-					href="https://www.linkedin.com/in/mohammed-hayatudeen-yusuf-04804a299"
+					href="www.linkedin.com/in/mohammed-hayatudeen-yusuf-anate-491113357"
 					target="_blank"
 					rel="noopener noreferrer"
 					className="flex flex-col items-center space-y-2 group"
