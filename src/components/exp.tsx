@@ -50,6 +50,42 @@ export default function ExpComponent() {
         </li>
       </ul>
     </div>
+
+    <div className="bg-white mt-10 p-6 rounded-lg shadow-lg">
+  <h3 className="text-2xl font-semibold mb-2 font-[family-name:var(--Poppins-SemiBold)]">
+    Front-End Software Engineer
+  </h3>
+  <h4 className="text-xl mb-2 font-[family-name:var(--Poppins-SemiBold)]">
+    Buy Local Africa |
+    <a
+      className="text-xl mb-2 font-[family-name:var(--Poppins-Regular)]"
+      href="https://www.buylocalafrica.com"
+    >
+      {" "}
+      https://www.buylocalafrica.com
+    </a>
+  </h4>
+
+  {/* <p className="text-sm text-gray-600 mb-4">Dec 2024 - PRESENT</p> */}
+  <ul className="list-disc list-inside space-y-2 text-gray-800 font-[family-name:var(--Poppins-Regular)]">
+    <li>
+      Optimize responsive, interactive, and visually appealing user interfaces for BuyLocal’s customer-facing website and internal admin dashboard using modern frameworks such as React.js and Vue.js.
+    </li>
+    <li>
+      Implemented advanced product search and filtering capabilities to enhance discoverability and streamline the shopping experience for users.
+    </li>
+    <li>
+      Designed and optimized a seamless shopping cart and checkout flow to improve conversion rates and reduce friction in the user journey.
+    </li>
+    <li>
+      Collaborated closely with UI/UX designers to ensure consistent design implementation across platforms, adhering to established style guides and design systems.
+    </li>
+    <li>
+      Leveraged AI-powered development tools to accelerate feature delivery and maintain high code quality throughout the project lifecycle.
+    </li>
+   
+  </ul>
+</div>
   </div>
 	);
 }
