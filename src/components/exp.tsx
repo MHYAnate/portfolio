@@ -62,7 +62,7 @@ export default function ExpComponent() {
       href="https://www.buylocalafrica.com"
     >
       {" "}
-      https://www.buylocalafrica.com
+      www.buylocalafrica.com
     </a>
   </h4>
 
