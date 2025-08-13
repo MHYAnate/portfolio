@@ -69,7 +69,7 @@ export default function ExpComponent() {
   {/* <p className="text-sm text-gray-600 mb-4">Dec 2024 - PRESENT</p> */}
   <ul className="list-disc list-inside space-y-2 text-gray-800 font-[family-name:var(--Poppins-Regular)]">
     <li>
-      Optimize responsive, interactive, and visually appealing user interfaces for BuyLocal’s customer-facing website and internal admin dashboard using modern frameworks such as React.js and Vue.js.
+      Optimize responsive, interactive, and visually appealing user interfaces for BuyLocal’s customer-facing website and internal admin dashboard using modern frameworks such as React.js.
     </li>
     <li>
       Implemented advanced product search and filtering capabilities to enhance discoverability and streamline the shopping experience for users.
