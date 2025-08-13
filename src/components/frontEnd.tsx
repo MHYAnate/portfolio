@@ -32,6 +32,16 @@ export default function FrontEndComponent() {
     };
   }, []);
 
+  const skillCategories = {
+    "Core & Frameworks": ["ReactJS", "Next.js", "TypeScript"],
+    "State Management": ["Redux Toolkit", "@tanstack/react-query", "SWR"],
+    "UI & Styling": ["Tailwind CSS", "Framer Motion", "Shadcn/UI (radix-ui)"],
+    "Forms & Validation": ["React Hook Form", "Zod"],
+    "Essential Tools": ["Lucide Icons", "Axios", "date-fns"],
+};
+
+const allSkills = Object.values(skillCategories).flat();
+
 	return (
     <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
     <h3 className="text-xl font-semibold mb-4 font-[family-name:var(--Poppins-SemiBold)]">
@@ -42,9 +52,17 @@ export default function FrontEndComponent() {
         "ReactJS",
         "Next.js",
         "Redux Toolkit",
+        "tanstack/react-query",
+        "SWR",
         "React Hook Form",
         "Tailwind CSS",
+        "Framer Motion", 
+        "Shadcn/UI (radix-ui)",
+        "Zod",
         "React Firebase Hooks",
+        "Lucide Icons",
+        "Axios",
+        "date-fns",
         "TypeScript",
       ].map((skill, index) => (
         <span
