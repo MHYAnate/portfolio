@@ -51,36 +51,7 @@ export default function ExpComponent() {
       </ul>
     </div>
 
-    {/* <div className="bg-white mt-10 p-6 rounded-lg shadow-lg">
-    <h3 className="text-2xl font-semibold mb-2 font-[family-name:var(--Poppins-SemiBold)] text-gray-900">
-        Frontend Engineer | Full Stack Contributor
-    </h3>
-    <h4 className="text-xl mb-4 font-[family-name:var(--Poppins-SemiBold)] text-indigo-700">
-        BuyLocal Africa | Admin Portal Revitalization
-    </h4>
-
-    <p className="text-gray-600 mb-4 italic font-[family-name:var(--Poppins-Regular)]">
-        Drove a full-stack initiative to enhance the internal admin tool, directly improving operational efficiency and team velocity by bridging frontend and backend development.
-    </p>
-
-    <ul className="list-disc list-inside space-y-3 text-gray-800 font-[family-name:var(--Poppins-Regular)]">
-        <li>
-            <strong>Architected & owned end-to-end features</strong>, leading development from UX concept and React implementation through to backend API design using Node.js and Express with prisma.
-        </li>
-        <li>
-            <strong>Pioneered a cross-functional development model</strong> by authoring production-ready backend services; my code was reviewed, approved, and deployed by the core backend team for multiple key features.
-        </li>
-        <li>
-            <strong>Accelerated project delivery by an estimated 15-20%</strong> by reducing backend dependencies and providing a concrete implementation pattern for API contracts.
-        </li>
-        <li>
-            <strong>Championed code quality and architectural alignment</strong> through active collaboration and peer review with senior backend engineers, ensuring system consistency and performance.
-        </li>
-        <li>
-            <strong>Leveraged AI-assisted development tools</strong> to streamline boilerplate creation, optimize code, and enhance testing coverage, contributing to a more robust and maintainable codebase.
-        </li>
-    </ul>
-</div> */}
+  
 <div className="bg-white mt-10 p-6 rounded-lg shadow-lg border-l-4 border-black">
     <h3 className="text-2xl font-semibold mb-2 font-[family-name:var(--Poppins-SemiBold)] text-gray-900">
         Frontend Engineer | Full Stack Initiative
@@ -89,25 +60,25 @@ export default function ExpComponent() {
         BuyLocal Africa | Admin Portal
     </h4>
 
-    <p className="text-gray-700 mb-4 font-[family-name:var(--Poppins-Regular)]">
-        Orchestrated a full-stack modernization of the core admin portal, bridging frontend and backend domains to <strong>accelerate team velocity by 20%</strong> and establish a new standard for cross-functional feature delivery.
+    <p className="text-gray-700 mb-4 font-[family-name:var(--Poppins-Regular)]">{`  Orchestrated a full-stack modernization of the core admin portal, bridging frontend and backend domains to `}
+      <strong>{`accelerate team velocity by 20%`}</strong> {`and establish a new standard for cross-functional feature delivery.`}
     </p>
 
     <ul className="list-disc list-inside space-y-3 text-gray-800 font-[family-name:var(--Poppins-Regular)]">
         <li>
-            <strong>Orchestrated end-to-end feature development</strong>, architecting solutions from React-based UI components down to robust Node.js/Express APIs with Prisma ORM, ensuring seamless data flow and functionality.
+            <strong>{`Orchestrated end-to-end feature development`}</strong>{`, architecting solutions from React-based UI components down to robust Node.js/Express APIs with Prisma ORM, ensuring seamless data flow and functionality.`}
         </li>
         <li>
-            <strong>Spearheaded a "Full-Stack Feature" model</strong>, authoring and delivering production-grade backend controllers that were seamlessly integrated by the core backend team, effectively reducing their feature backlog and dependency bottlenecks.
+            <strong>{`Spearheaded a "Full-Stack Feature" model`}</strong>{`, authoring and delivering production-grade backend controllers that were seamlessly integrated by the core backend team, effectively reducing their feature backlog and dependency bottlenecks.`}
         </li>
         <li>
-            <strong>Drove a 20% increase in feature delivery speed</strong> by defining clear API contracts and providing implemented patterns, drastically reducing cross-team negotiation and development cycles.
+            <strong>{`Drove a 20% increase in feature delivery speed`}</strong>{`by defining clear API contracts and providing implemented patterns, drastically reducing cross-team negotiation and development cycles.`} 
         </li>
         <li>
-            <strong>Elevated code quality and architectural standards</strong> through rigorous peer review with senior engineers, fostering knowledge sharing and ensuring system-wide consistency, performance, and maintainability.
+            <strong>{`Elevated code quality and architectural standards`}</strong>{`through rigorous peer review with senior engineers, fostering knowledge sharing and ensuring system-wide consistency, performance, and maintainability.`} 
         </li>
         <li>
-            <strong>Integrated AI-powered tooling</strong> into the development lifecycle to automate boilerplate, enhance code robustness, and improve test coverage, contributing to a higher-quality and more resilient codebase.
+            <strong>{`Integrated AI-powered tooling`}</strong>{`into the development lifecycle to automate boilerplate, enhance code robustness, and improve test coverage, contributing to a higher-quality and more resilient codebase.`} 
         </li>
     </ul>
 </div>
