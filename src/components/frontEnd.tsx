@@ -40,7 +40,7 @@ export default function FrontEndComponent() {
     "Essential Tools": ["Lucide Icons", "Axios", "date-fns"],
 };
 
-const allSkills = Object.values(skillCategories).flat();
+
 
 	return (
     <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
