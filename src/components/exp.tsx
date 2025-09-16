@@ -53,7 +53,7 @@ export default function ExpComponent() {
 
     <div className="bg-white mt-10 p-6 rounded-lg shadow-lg">
   <h3 className="text-2xl font-semibold mb-2 font-[family-name:var(--Poppins-SemiBold)]">
-   Full Stack front heavy-Front-End Software Engineer 
+   Full Stack front heavy Frontend Software Engineer 
   </h3>
   <h4 className="text-xl mb-2 font-[family-name:var(--Poppins-SemiBold)]">
     Buy Local Africa Admin Portal
