@@ -396,7 +396,7 @@ export default function Portfolio() {
 							}`}
 						>
 							<Image
-								src={"/pic.jpg"}
+								src={"/pic.jpeg"}
 								alt={` image`}
 								width={400}
 								height={300}
