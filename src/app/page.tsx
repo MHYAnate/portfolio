@@ -12,18 +12,152 @@ import ExpComponent from "@/components/exp";
 import AboutComponent from "@/components/about";
 import ContactComponent from "@/components/contact";
 import FooterComponent from "@/components/footer";
+import { PortfolioCarousel } from "@/components/carousel";
 
 export default function Portfolio() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 	const [activeSection, setActiveSection] = useState("home");
 	const [isScrolled, setIsScrolled] = useState(false);
-	const [isVisible, setIsVisible] = useState(false)
+	const [isVisible, setIsVisible] = useState(false);
 
 	const skillsRef = useRef<HTMLDivElement>(null);
 
+	const item = [
+		{
+			id: "2",
+			image: "/p0.png",
+			title: "BuyLocal Admin Portal",
+			description: "Sales Performance pie chart",
+			company: "BuyLocal",
+		},
+		{
+			id: "14",
+			image: "/p10.png",
+			title: "BuyLocal Admin Portal",
+			description: "Order detail page",
+			company: "BuyLocal",
+		},
+		{
+			id: "15",
+			image: "/p11.png",
+			title: "BuyLocal Admin Portal",
+			description: "Order detail page",
+			company: "BuyLocal",
+		},
+		{
+			id: "16",
+			image: "/p12.png",
+			title: "BuyLocal Admin Portal",
+			description: "feedback page",
+			company: "BuyLocal",
+		},
+		{
+			id: "17",
+			image: "/p13.png",
+			title: "BuyLocal Admin Portal",
+			description: "support page charts",
+			company: "BuyLocal",
+		},
+		{
+			id: "4",
+			image: "/p3.png",
+			title: "BuyLocal Admin Portal",
+			description: "Customer Information",
+			company: "BuyLocal",
+		},
+		{
+			id: "5",
+			image: "/p14.png",
+			title: "BuyLocal Admin Portal",
+			description: "Customer Order History Page",
+			company: "BuyLocal",
+		},
+		{
+			id: "6",
+			image: "/p15.png",
+			title: "BuyLocal Admin Portal",
+			description: "Customer Order History Page",
+			company: "BuyLocal",
+		},
+		{
+			id: "7",
+			image: "/p16.png",
+			title: "BuyLocal Admin Portal",
+			description: "Customer Order History Page",
+			company: "BuyLocal",
+		},
+		
+		{
+			id: "1",
+			image: "/p.png",
+			title: "BuyLocal Admin Portal",
+			description: "Sales Performance line Graph",
+			company: "BuyLocal",
+		},
+		{
+			id: "3",
+			image: "/p1.png",
+			title: "BuyLocal Admin Portal",
+			description: "Recent Customers table",
+			company: "BuyLocal",
+		},
+		// {
+		// 	id: "4",
+		// 	image: "/p2.png",
+		// 	title: "BuyLocal Admin Portal",
+		// 	description: "BuyLocal Admin Portaling",
+		// 	company: "BuyLocal",
+		// },
+		
+		{
+			id: "8",
+			image: "/p5.png",
+			title: "BuyLocal Admin Portal",
+			description: "Product Page",
+			company: "BuyLocal",
+		},
+		{
+			id: "9",
+			image: "/p4.png",
+			title: "BuyLocal Admin Portal",
+			description: "View Product Details Page",
+			company: "BuyLocal",
+		},
+	
+		{
+			id: "10",
+			image: "/p6.png",
+			title: "BuyLocal Admin Portal",
+			description: "Add New Product detail Page",
+			company: "BuyLocal",
+		},
+		{
+			id: "11",
+			image: "/p7.png",
+			title: "BuyLocal Admin Portal",
+			description: "Add New Product Pricing Page",
+			company: "BuyLocal",
+		},
+		{
+			id: "12",
+			image: "/p8.png",
+			title: "BuyLocal Admin Portal",
+			description: "Manufacturer Page",
+			company: "BuyLocal",
+		},
+		{
+			id: "13",
+			image: "/p9.png",
+			title: "BuyLocal Admin Portal",
+			description: "Add New Manufacturer Page",
+			company: "BuyLocal",
+		},
+		
+	];
+
 	useEffect(() => {
-    setIsVisible(true)
-  }, [])
+		setIsVisible(true);
+	}, []);
 
 	const [qNav, setQNav] = useState("");
 
@@ -57,8 +191,7 @@ export default function Portfolio() {
 
 	const qView8 = () => q8.current?.scrollIntoView({ behavior: "smooth" });
 
-	const qhome = () =>
-		q1.current?.scrollIntoView({ behavior: "smooth" });
+	const qhome = () => q1.current?.scrollIntoView({ behavior: "smooth" });
 
 	useEffect(() => {
 		if (qNav === "home") {
@@ -124,7 +257,6 @@ export default function Portfolio() {
 
 	const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-	
 	return (
 		<div className="bg-white text-black min-h-screen font-[family-name:var(--Poppins-SemiBold)] ">
 			{/* Navigation */}
@@ -235,7 +367,8 @@ export default function Portfolio() {
 										: "text-black hover:bg-gray-200"
 								} transition-colors duration-300`}
 								onClick={() => {
-									toggleMenu(); setQNav(item.toLowerCase());
+									toggleMenu();
+									setQNav(item.toLowerCase());
 								}}
 							>
 								{item}
@@ -257,7 +390,11 @@ export default function Portfolio() {
 						<div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center animate-ken-burns"></div>
 					</div>
 					<div className="text-center relative z-10 flex flex-col items-center">
-						<div className={`cursor-pointer w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-white shadow-lg transition-all duration-1000 ease-out delay-1000 transform ${isVisible ? 'translate-x-0 opacity-100' : 'opacity-0'}`}>
+						<div
+							className={`cursor-pointer w-48 h-48 rounded-full overflow-hidden mb-8 border-4 border-white shadow-lg transition-all duration-1000 ease-out delay-1000 transform ${
+								isVisible ? "translate-x-0 opacity-100" : "opacity-0"
+							}`}
+						>
 							<Image
 								src={"/pic.jpg"}
 								alt={` image`}
@@ -266,10 +403,22 @@ export default function Portfolio() {
 								className="w-full h-48 object-cover transition-transform duration-300 hover:scale-105"
 							/>
 						</div>
-						<h1 className={`text-5xl md:text-7xl font-bold mb-4 animate-fade-in-up font-[family-name:var(--Poppins-Bold)] transition-all duration-1000 ease-out delay-300 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
+						<h1
+							className={`text-5xl md:text-7xl font-bold mb-4 animate-fade-in-up font-[family-name:var(--Poppins-Bold)] transition-all duration-1000 ease-out delay-300 transform ${
+								isVisible
+									? "translate-y-0 opacity-100"
+									: "translate-y-10 opacity-0"
+							}`}
+						>
 							Mohammed Hayatudeen Yusuf
 						</h1>
-						<p className={`text-xl md:text-2xl mb-8 animate-fade-in-up animation-delay-300 transition-all duration-1000 ease-out delay-300 transform font-[family-name:var(--Poppins-SemiBold)] ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
+						<p
+							className={`text-xl md:text-2xl mb-8 animate-fade-in-up animation-delay-300 transition-all duration-1000 ease-out delay-300 transform font-[family-name:var(--Poppins-SemiBold)] ${
+								isVisible
+									? "translate-x-0 opacity-100"
+									: "translate-x-10 opacity-0"
+							}`}
+						>
 							Tech Entrepreneur | Project Engineer | Full-Stack Developer |
 							AI-Powered Development Engineer
 						</p>
@@ -281,7 +430,7 @@ export default function Portfolio() {
 								Get in Touch
 							</div>
 							<div
-							onClick={() => setQNav("projects")}
+								onClick={() => setQNav("projects")}
 								className=" cursor-pointer border-2 border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition-colors duration-300 transform hover:scale-105 font-[family-name:var(--Poppins-Bold)]"
 							>
 								View Projects
@@ -289,7 +438,7 @@ export default function Portfolio() {
 						</div>
 					</div>
 					<div className="cursor-pointer absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-						<a onClick={()=>setQNav("about")} className="text-white">
+						<a onClick={() => setQNav("about")} className="text-white">
 							<svg
 								className="w-6 h-6"
 								fill="none"
@@ -321,6 +470,7 @@ export default function Portfolio() {
 				{/* Experience Section */}
 				<section id="experience" ref={q3} className="py-20 bg-gray-100">
 					<ExpComponent />
+					
 				</section>
 
 				{/* Education Section */}
@@ -343,10 +493,11 @@ export default function Portfolio() {
 						<h2 className="text-3xl font-bold mb-12 text-center font-[family-name:var(--Poppins-Bold)]">
 							Featured Projects
 						</h2>
-						<div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+						<div className="grid grid-cols-1 md:grid-cols-2 gap-12">
 							<Sspot1Component />
 							<RagComponent />
 							<BEasycomponent />
+							<PortfolioCarousel items={item} />
 						</div>
 					</div>
 				</section>

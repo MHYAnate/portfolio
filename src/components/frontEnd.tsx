@@ -64,6 +64,7 @@ const allSkills = Object.values(skillCategories).flat();
         "Axios",
         "date-fns",
         "TypeScript",
+        "xlsx",
       ].map((skill, index) => (
         <span
           ref={(el: HTMLDivElement | null) => {

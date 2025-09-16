@@ -38,7 +38,7 @@ export default function BackEndComponent() {
     Backend Development
     </h3>
     <div className="flex flex-wrap gap-2">
-    {["Node.js", "Express.js", "TypeScript"].map((skill, index) => (
+    {["Node.js", "Express.js", "prisma", "TypeScript"].map((skill, index) => (
         <span
           ref={(el: HTMLDivElement | null) => {
             if (el) featureRefs.current[index] = el;
