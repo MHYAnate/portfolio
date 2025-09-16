@@ -70,6 +70,8 @@ export function PortfolioCarousel({
           <Image
             src={currentItem.image || "/placeholder.svg"}
             alt={currentItem.title}
+            width={400}
+            height={300}
             className="w-full h-full object-cover transition-all duration-500 ease-out"
           />
 
