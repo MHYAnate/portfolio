@@ -86,49 +86,11 @@ export default function Portfolio() {
 			description: "Customer Order History Page",
 			company: "BuyLocal",
 		},
-		
-		{
-			id: "1",
-			image: "/p.png",
-			title: "BuyLocal Admin Portal",
-			description: "Sales Performance line Graph",
-			company: "BuyLocal",
-		},
 		{
 			id: "3",
 			image: "/p1.png",
 			title: "BuyLocal Admin Portal",
 			description: "Recent Customers table",
-			company: "BuyLocal",
-		},
-		// {
-		// 	id: "4",
-		// 	image: "/p2.png",
-		// 	title: "BuyLocal Admin Portal",
-		// 	description: "BuyLocal Admin Portaling",
-		// 	company: "BuyLocal",
-		// },
-		
-		{
-			id: "8",
-			image: "/p5.png",
-			title: "BuyLocal Admin Portal",
-			description: "Product Page",
-			company: "BuyLocal",
-		},
-		{
-			id: "9",
-			image: "/p4.png",
-			title: "BuyLocal Admin Portal",
-			description: "View Product Details Page",
-			company: "BuyLocal",
-		},
-	
-		{
-			id: "10",
-			image: "/p6.png",
-			title: "BuyLocal Admin Portal",
-			description: "Add New Product detail Page",
 			company: "BuyLocal",
 		},
 		{
