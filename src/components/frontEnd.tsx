@@ -33,9 +33,6 @@ export default function FrontEndComponent() {
   }, []);
 
 
-
-
-
 	return (
     <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
     <h3 className="text-xl font-semibold mb-4 font-[family-name:var(--Poppins-SemiBold)]">
