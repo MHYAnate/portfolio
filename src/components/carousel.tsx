@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image"
 
-import { useState, useEffect, useCallback } from "react"
+import { useState, useEffect, useCallback, useRef } from "react"
 
 export interface CarouselItem {
   id: string
@@ -26,6 +26,35 @@ export function PortfolioCarousel({
 }: PortfolioCarouselProps) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isPlaying, setIsPlaying] = useState(autoSlide)
+
+  const featureRefs = useRef<(HTMLDivElement | null)[]>([])
+  
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('feature-visible');
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+    
+      // Copy the current refs to a local variable
+      const currentRefs = featureRefs.current;
+    
+      currentRefs.forEach((ref) => {
+        if (ref) observer.observe(ref);
+      });
+    
+      return () => {
+        // Use the local variable in the cleanup
+        currentRefs.forEach((ref) => {
+          if (ref) observer.unobserve(ref);
+        });
+      };
+    }, []);
 
   useEffect(() => {
     if (!isPlaying || items.length <= 1) return
@@ -140,6 +169,46 @@ export function PortfolioCarousel({
 
    
         </div>
+        <div className="flex flex-wrap gap-2">
+					<div className="p-6">
+			
+							<div className="flex flex-wrap gap-2 mt-4">
+								{" "}
+								{[
+									"ReactJS",
+									"Next.js",
+								
+									"Tailwind CSS",
+									"React Firebase Hooks",
+									"Node.js", "Express.js", "prisma", "TypeScript",
+                  "tanstack/react-query",
+                  "Axios",
+                  "xlsx",
+                  "Zod",
+									"Vercel",
+									"Git",
+									"GitHub",
+                  "date-fns",
+									"Bolt.new",
+									"Gemini",
+									"ChatGpt",
+                  "deepseek",
+                  "copilot",  
+									"v0",
+								].map((skill, index) => (
+									<span
+									ref={(el: HTMLDivElement | null) =>{if (el) featureRefs.current[index] = el} } 
+										key={index}
+										className={`bg-gray-200 text-gray-700 px-2 py-1 rounded text-sm  font-[family-name:var(--Poppins-Regular)] `}
+										
+									>
+										{skill}
+									</span>
+								))}
+							</div>
+					
+					</div>
+				</div>
       </div>
 
       {items.length > 1 && (
@@ -158,6 +227,7 @@ export function PortfolioCarousel({
           ))}
         </div>
       )}
+      	
     </div>
   )
 }

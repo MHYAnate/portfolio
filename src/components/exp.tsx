@@ -52,32 +52,34 @@ export default function ExpComponent() {
     </div>
 
     <div className="bg-white mt-10 p-6 rounded-lg shadow-lg">
-  <h3 className="text-2xl font-semibold mb-2 font-[family-name:var(--Poppins-SemiBold)]">
-   Full Stack front heavy Frontend Software Engineer 
-  </h3>
-  <h4 className="text-xl mb-2 font-[family-name:var(--Poppins-SemiBold)]">
-    Buy Local Africa Admin Portal
+    <h3 className="text-2xl font-semibold mb-2 font-[family-name:var(--Poppins-SemiBold)] text-gray-900">
+        Frontend Engineer | Full Stack Contributor
+    </h3>
+    <h4 className="text-xl mb-4 font-[family-name:var(--Poppins-SemiBold)] text-indigo-700">
+        BuyLocal Africa | Admin Portal Revitalization
+    </h4>
 
-  </h4>
+    <p className="text-gray-600 mb-4 italic font-[family-name:var(--Poppins-Regular)]">
+        Drove a full-stack initiative to enhance the internal admin tool, directly improving operational efficiency and team velocity by bridging frontend and backend development.
+    </p>
 
-  <ul className="list-disc list-inside space-y-2 text-gray-800 font-[family-name:var(--Poppins-Regular)]">
-    <li>
-      Optimize responsive, interactive, and visually appealing user interfaces for BuyLocal’s  Admin portal using modern frameworks such as React.js.
-    </li>
-    <li>
-      worked closely with the backend team to integrate RESTful APIs and GraphQL endpoints, ensuring seamless data flow and functionality.
-    </li>
-    <li>
-     Developed back end controllers and services using Node.js and Express.js prisma to handle business logic, data processing, and server-side operations.
-    </li>
-    <li>
-      Collaborated closely with UI/UX designers to ensure consistent design implementation across platforms, adhering to established style guides and design systems.
-    </li>
-    <li>
-      Leveraged AI-powered development tools to accelerate feature delivery and maintain high code quality throughout the project lifecycle.
-    </li>
-   
-  </ul>
+    <ul className="list-disc list-inside space-y-3 text-gray-800 font-[family-name:var(--Poppins-Regular)]">
+        <li>
+            <strong>Architected & owned end-to-end features</strong>, leading development from UX concept and React implementation through to backend API design using Node.js and Express with prisma.
+        </li>
+        <li>
+            <strong>Pioneered a cross-functional development model</strong> by authoring production-ready backend services; my code was reviewed, approved, and deployed by the core backend team for multiple key features.
+        </li>
+        <li>
+            <strong>Accelerated project delivery by an estimated 15-20%</strong> by reducing backend dependencies and providing a concrete implementation pattern for API contracts.
+        </li>
+        <li>
+            <strong>Championed code quality and architectural alignment</strong> through active collaboration and peer review with senior backend engineers, ensuring system consistency and performance.
+        </li>
+        <li>
+            <strong>Leveraged AI-assisted development tools</strong> to streamline boilerplate creation, optimize code, and enhance testing coverage, contributing to a more robust and maintainable codebase.
+        </li>
+    </ul>
 </div>
   </div>
 	);
