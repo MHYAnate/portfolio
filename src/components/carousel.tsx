@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image"
 
 import { useState, useEffect, useCallback } from "react"
 
@@ -66,7 +67,7 @@ export function PortfolioCarousel({
     <div className={`w-full max-w-5xl mx-auto ${className}`}>
       <div className="relative overflow-hidden bg-card border rounded-xl shadow-2xl">
         <div className="relative aspect-[16/10] sm:aspect-video bg-muted">
-          <img
+          <Image
             src={currentItem.image || "/placeholder.svg"}
             alt={currentItem.title}
             className="w-full h-full object-cover transition-all duration-500 ease-out"
