@@ -6,7 +6,7 @@ export default function ExpComponent() {
     <h2 className="text-3xl font-bold mb-12 text-center font-[family-name:var(--Poppins-Bold)]">
       Professional Experience
     </h2>
-    <div className="bg-white p-6 rounded-lg shadow-lg">
+    <div className="bg-white mt-10 p-6 rounded-lg shadow-lg border-l-4 border-black">
       <h3 className="text-2xl font-semibold mb-2 font-[family-name:var(--Poppins-SemiBold)]">
         Software Developer, Project Engineer and Founder
       </h3>
@@ -51,7 +51,7 @@ export default function ExpComponent() {
       </ul>
     </div>
 
-    <div className="bg-white mt-10 p-6 rounded-lg shadow-lg">
+    {/* <div className="bg-white mt-10 p-6 rounded-lg shadow-lg">
     <h3 className="text-2xl font-semibold mb-2 font-[family-name:var(--Poppins-SemiBold)] text-gray-900">
         Frontend Engineer | Full Stack Contributor
     </h3>
@@ -78,6 +78,36 @@ export default function ExpComponent() {
         </li>
         <li>
             <strong>Leveraged AI-assisted development tools</strong> to streamline boilerplate creation, optimize code, and enhance testing coverage, contributing to a more robust and maintainable codebase.
+        </li>
+    </ul>
+</div> */}
+<div className="bg-white mt-10 p-6 rounded-lg shadow-lg border-l-4 border-black">
+    <h3 className="text-2xl font-semibold mb-2 font-[family-name:var(--Poppins-SemiBold)] text-gray-900">
+        Frontend Engineer | Full Stack Initiative
+    </h3>
+    <h4 className="text-xl mb-4 font-[family-name:var(--Poppins-SemiBold)] text-black">
+        BuyLocal Africa | Admin Portal
+    </h4>
+
+    <p className="text-gray-700 mb-4 font-[family-name:var(--Poppins-Regular)]">
+        Orchestrated a full-stack modernization of the core admin portal, bridging frontend and backend domains to <strong>accelerate team velocity by 20%</strong> and establish a new standard for cross-functional feature delivery.
+    </p>
+
+    <ul className="list-disc list-inside space-y-3 text-gray-800 font-[family-name:var(--Poppins-Regular)]">
+        <li>
+            <strong>Orchestrated end-to-end feature development</strong>, architecting solutions from React-based UI components down to robust Node.js/Express APIs with Prisma ORM, ensuring seamless data flow and functionality.
+        </li>
+        <li>
+            <strong>Spearheaded a "Full-Stack Feature" model</strong>, authoring and delivering production-grade backend controllers that were seamlessly integrated by the core backend team, effectively reducing their feature backlog and dependency bottlenecks.
+        </li>
+        <li>
+            <strong>Drove a 20% increase in feature delivery speed</strong> by defining clear API contracts and providing implemented patterns, drastically reducing cross-team negotiation and development cycles.
+        </li>
+        <li>
+            <strong>Elevated code quality and architectural standards</strong> through rigorous peer review with senior engineers, fostering knowledge sharing and ensuring system-wide consistency, performance, and maintainability.
+        </li>
+        <li>
+            <strong>Integrated AI-powered tooling</strong> into the development lifecycle to automate boilerplate, enhance code robustness, and improve test coverage, contributing to a higher-quality and more resilient codebase.
         </li>
     </ul>
 </div>
