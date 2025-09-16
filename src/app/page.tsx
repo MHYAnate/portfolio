@@ -457,9 +457,10 @@ export default function Portfolio() {
 						</h2>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-12">
 							<Sspot1Component />
+							<PortfolioCarousel items={item} />
 							<RagComponent />
 							<BEasycomponent />
-							<PortfolioCarousel items={item} />
+							
 						</div>
 					</div>
 				</section>
