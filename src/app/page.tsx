@@ -381,7 +381,7 @@ export default function Portfolio() {
 									: "translate-x-10 opacity-0"
 							}`}
 						>
-							Tech Entrepreneur | Project Engineer | Frontend-Focused Full Stack Engineer |
+							Tech Entrepreneur | Frontend-Focused Full Stack Engineer |
 							AI-Powered Development Engineer
 						</p>
 						<div className="flex justify-center space-x-4 animate-fade-in-up animation-delay-600">
