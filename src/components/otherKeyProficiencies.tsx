@@ -38,9 +38,7 @@ export default function KeyProficienciesComponent() {
 			</h3>
 			<div className="flex flex-wrap gap-2">
 				{[
-					"Git",
-					"GitHub",
-					"Jest",
+					"Agile & Scrum methodologies",
 					"Performance Optimization",
 					"Responsive design",
 					"PWA development",

@@ -34,10 +34,10 @@ export default function DevToolsComponent() {
 	return (
 		<div className="bg-gray-100 p-6 rounded-lg shadow-lg">
 			<h3 className="text-xl font-semibold mb-4 font-[family-name:var(--Poppins-SemiBold)]">
-				DevOps & Deployment
+				DevOps, Deployment Version Control & Collaboration
 			</h3>
 			<div className="flex flex-wrap gap-2">
-				{["Vercel", "CI/CD Pipelines"].map((skill, index) => (
+				{["Vercel", "CI/CD Pipelines", "Nodemon","ESLint","Git","GitHub","Winston (Logging)","Trello"].map((skill, index) => (
 					<span
 						ref={(el: HTMLDivElement | null) => {
 							if (el) featureRefs.current[index] = el;
