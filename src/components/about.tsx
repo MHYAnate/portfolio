@@ -22,7 +22,7 @@ export default function AboutComponent() {
 			</p>
 			<p className=" text-gray-800 mb-1 leading-relaxed font-[family-name:var(--Poppins-Regular)]">
 				<span className="text-lg text-gray-800 mb-1 leading-relaxed font-[family-name:var(--Poppins-Bold)]">
-					Founder of Sspot1 Ventures,{" "}
+					Lead Developer and Founder of Sspot1 Ventures,{" "}
 				</span>{" "}
 			
       {` a tech-driven enterprise building platforms to empower Africa’s workforce through digital innovation.`}

@@ -8,7 +8,7 @@ export default function ExpComponent() {
     </h2>
     <div className="bg-white mt-10 p-6 rounded-lg shadow-lg border-l-4 border-black">
       <h3 className="text-2xl font-semibold mb-2 font-[family-name:var(--Poppins-SemiBold)]">
-        Software Developer, Project Engineer and Founder
+      Founder & Lead Developer
       </h3>
       <h4 className="text-xl mb-2 font-[family-name:var(--Poppins-SemiBold)]">
         Sspot1 Ventures |
@@ -26,27 +26,24 @@ export default function ExpComponent() {
       {/* <p className="text-sm text-gray-600 mb-4">Dec 2024 - PRESENT</p> */}
       <ul className="list-disc list-inside space-y-2 text-gray-800 font-[family-name:var(--Poppins-Regular)]">
         <li>
-          Developed and launched Sspot1, a full-stack
-          progressive web application connecting vendors with clients, revolutionizing
-          service procurement.
+         {`Founded and spearheaded the end-to-end development and launch of Sspot1, a Fire base React.js on Next.js full-stack service marketplace platform, from initial concept through to deployment and post-launch support`}
         </li>
         <li>
-          Pioneered responsive UI/UX design to ensure cross-platform
-          compatibility and user satisfaction.
+          {`Architected and engineered the entire technical stack, designing for scalability, security, and a responsive cross-platform user experience that significantly enhanced client engagement`}
         </li>
         <li>
-          Designed and implemented a standalone RAG application related
-          to Sspot1.
+          {`Directed the development of a standalone Retrieval-Augmented Generation (RAG) application to augment the platform's core functionality, demonstrating expertise in integrating advanced AI solution`}
         </li>
         <li>
-          Utilized a wide range of AI tools to enhance development
-          efficiency and product quality.
+          {`Pioneered the adoption of AI-driven development tools (e.g., GitHub Copilot, GPT-engineer) within the workflow, accelerating development cycles and improving code quality by an estimated 30%.`}
         </li>
         <li>
-          Managed all aspects of the project lifecycle, from concept
-          ideation to deployment and post-launch support within three months for development plus about three weeks for ideation, as the sole
-          software developer and project engineer ensuring timely delivery
-          and adherence to best practices.
+          {`Established and enforced engineering best practices, CI/CD pipelines, and security protocols, acting as the sole technical decision-maker and ensuring robust, maintainable codebases.`}
+      
+        </li>
+        <li>
+          {`Managed all aspects of the project lifecycle, from concept ideation to deployment and post-launch support, as the sole lead developer and project engineer ensuring timely delivery and adherence to best practices.`}
+      
         </li>
       </ul>
     </div>
