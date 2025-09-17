@@ -1,29 +1,28 @@
 "use client";
 import React, { useEffect, useRef } from "react";
 
-export default function BackEndComponent() {
-
-	const featureRefs = useRef<(HTMLDivElement | null)[]>([])
+export default function ApiComponent() {
+  const featureRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('feature-visible');
+            entry.target.classList.add("feature-visible");
           }
         });
       },
       { threshold: 0.1 }
     );
-  
+
     // Copy the current refs to a local variable
     const currentRefs = featureRefs.current;
-  
+
     currentRefs.forEach((ref) => {
       if (ref) observer.observe(ref);
     });
-  
+
     return () => {
       // Use the local variable in the cleanup
       currentRefs.forEach((ref) => {
@@ -32,25 +31,27 @@ export default function BackEndComponent() {
     };
   }, []);
 
-	return (
+  return (
     <div className="bg-gray-100 p-6 rounded-lg shadow-lg">
-    <h3 className="text-xl font-semibold mb-4 font-[family-name:var(--Poppins-SemiBold)]">
-    Backend Development
-    </h3>
-    <div className="flex flex-wrap gap-2">
-    {["Node.js", "Express.js", "Prisma ORM","REST & Socket.io APIs", "TypeScript"].map((skill, index) => (
-        <span
-          ref={(el: HTMLDivElement | null) => {
-            if (el) featureRefs.current[index] = el;
-          }}
-          key={index}
-          className={`bg-black text-white px-3 py-1 rounded-full text-sm  font-[family-name:var(--Poppins-Regular)]`}
-        >
-          {skill}
-        </span>
-      ))}
-    </div>
-    <style jsx>{`
+      <h3 className="text-xl font-semibold mb-4 font-[family-name:var(--Poppins-SemiBold)]">
+      APIs & Services
+      </h3>
+      <div className="flex flex-wrap gap-2">
+        {["Paystack (Payments)", "Cloudinary (Media Processing)", "Resend (Transactional Email)"].map(
+          (skill, index) => (
+            <span
+              ref={(el: HTMLDivElement | null) => {
+                if (el) featureRefs.current[index] = el;
+              }}
+              key={index}
+              className={`bg-black text-white px-3 py-1 rounded-full text-sm  font-[family-name:var(--Poppins-Regular)]`}
+            >
+              {skill}
+            </span>
+          )
+        )}
+      </div>
+      <style jsx>{`
         @keyframes fadeInUp {
           from {
             opacity: 0;
@@ -68,6 +69,6 @@ export default function BackEndComponent() {
           animation: fadeInUp 0.5s ease-out forwards;
         }
       `}</style>
-  </div>
-	);
+    </div>
+  );
 }

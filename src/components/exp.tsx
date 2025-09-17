@@ -72,9 +72,6 @@ export default function ExpComponent() {
             <strong>{`Spearheaded a "Full-Stack Feature" model`}</strong>{`, authoring and delivering production-grade backend controllers that were seamlessly integrated by the core backend team, effectively reducing their feature backlog and dependency bottlenecks.`}
         </li>
         <li>
-            <strong>{`Drove a 20% increase in feature delivery speed`}</strong>{`by defining clear API contracts and providing implemented patterns, drastically reducing cross-team negotiation and development cycles.`} 
-        </li>
-        <li>
             <strong>{`Elevated code quality and architectural standards`}</strong>{`through rigorous peer review with senior engineers, fostering knowledge sharing and ensuring system-wide consistency, performance, and maintainability.`} 
         </li>
         <li>

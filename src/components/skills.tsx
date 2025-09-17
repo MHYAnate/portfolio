@@ -7,6 +7,7 @@ import KeyProficienciesComponent from "./otherKeyProficiencies";
 import AiToolsComponent from "./aiToolsLibraries";
 import BackEndComponent from "./backEnd";
 import FrontEndComponent from "./frontEnd";
+import ApiComponent from "./api&service";
 
 export default function SkillsComponent() {
 	const featureRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -52,6 +53,7 @@ export default function SkillsComponent() {
 					{ id: "db", component: <DbComponent /> },
 					{ id: "dev-tools", component: <DevToolsComponent /> },
 					{ id: "image-design", component: <ImageDesignComponent /> },
+					{ id: "APIs-Services", component: <ApiComponent />},
 				].map((item, index) => (
 					<div
 						ref={(el: HTMLDivElement | null) => {

@@ -37,7 +37,7 @@ export default function DbComponent() {
 				Database & Storage
 			</h3>
 			<div className="flex flex-wrap gap-2">
-				{["Astra DB (Cassandra)", "Firebase", "Pinecone"].map(
+				{["Astra DB (Cassandra)", "Firebase", "Pinecone", "PostgreSQL"].map(
 					(skill, index) => (
 						<span
 							ref={(el: HTMLDivElement | null) => {
