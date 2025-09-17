@@ -5,7 +5,7 @@ export default function AboutComponent() {
 		<div className="bg-gray-100 p-6 rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
 			<p className=" text-gray-800 mb-6 leading-relaxed font-[family-name:var(--Poppins-Regular)]">
 				<span className="text-lg text-gray-800 mb-6 leading-relaxed font-[family-name:var(--Poppins-Bold)]">
-					Highly motivated and results-oriented Full-Stack Developer
+					Highly motivated and results-oriented Frontend-Focused Full Stack Engineer
 				</span>{" "}
 				with a passion for building innovative web applications using
 				cutting-edge technologies and a strong foundation in AI-powered
