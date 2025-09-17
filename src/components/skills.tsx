@@ -48,12 +48,12 @@ export default function SkillsComponent() {
 				{[
 					{ id: "frontend", component: <FrontEndComponent /> },
 					{ id: "backend", component: <BackEndComponent /> },
+					{ id: "db", component: <DbComponent /> },
+					{ id: "APIs-Services", component: <ApiComponent />},
 					{ id: "ai-tools", component: <AiToolsComponent /> },
 					{ id: "key-proficiencies", component: <KeyProficienciesComponent /> },
-					{ id: "db", component: <DbComponent /> },
 					{ id: "dev-tools", component: <DevToolsComponent /> },
 					{ id: "image-design", component: <ImageDesignComponent /> },
-					{ id: "APIs-Services", component: <ApiComponent />},
 				].map((item, index) => (
 					<div
 						ref={(el: HTMLDivElement | null) => {
