@@ -37,7 +37,7 @@ export default function DevToolsComponent() {
 				DevOps, Deployment Version Control & Collaboration
 			</h3>
 			<div className="flex flex-wrap gap-2">
-				{["Vercel", "CI/CD Pipelines", "Nodemon","ESLint","Git","GitHub","Winston (Logging)","Trello"].map((skill, index) => (
+				{["Vercel","Netlify", "CI/CD Pipelines", "Nodemon","ESLint","Git","GitHub","Winston (Logging)","Trello"].map((skill, index) => (
 					<span
 						ref={(el: HTMLDivElement | null) => {
 							if (el) featureRefs.current[index] = el;
