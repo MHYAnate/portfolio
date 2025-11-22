@@ -84,15 +84,16 @@ export default function ExpComponent() {
     Full Stack Engineer
     </h3>
     <h4 className="text-xl mb-4 font-[family-name:var(--Poppins-SemiBold)] text-black">
-       Ppoint | Users Interface | Admin Portal
-       <a
+       Ppoint | Users Interface | Admin Portal |
+       
+    </h4>
+    <a
           className="text-xl mb-2 font-[family-name:var(--Poppins-Regular)]"
           href="https://Ppoint.vercel.app"
         >
           {" "}
           Ppoint.vercel.app
         </a>
-    </h4>
 
   
 
