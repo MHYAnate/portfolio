@@ -99,7 +99,7 @@ export default function ExpComponent() {
 
     <ul className="list-disc list-inside space-y-2 text-gray-800 font-[family-name:var(--Poppins-Regular)]">
         <li>
-         {`Founded and spearheading the end-to-end development of of Ppoint, an Express Prisma ORM, React.js on Next.js full-stack Real Estate platform, from the initial concept through to the current deployment phase`}
+         {`Founded and spearheading the end-to-end development of Ppoint, an Express Prisma ORM, React.js on Next.js full-stack Real Estate platform, from the initial concept through to the current deployment phase`}
         </li>
         <li>
           {`Architected and engineered the entire technical stack, designing for scalability, security, and a responsive cross-platform user experience that significantly enhanced client engagement`}
