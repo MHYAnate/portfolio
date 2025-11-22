@@ -13,6 +13,7 @@ import AboutComponent from "@/components/about";
 import ContactComponent from "@/components/contact";
 import FooterComponent from "@/components/footer";
 import { PortfolioCarousel } from "@/components/carousel";
+import PpointComponent from "@/components/ppointCard";
 
 export default function Portfolio() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -381,7 +382,7 @@ export default function Portfolio() {
 									: "translate-x-10 opacity-0"
 							}`}
 						>
-							Tech Entrepreneur | Frontend-Focused Full Stack Engineer |
+							Tech Entrepreneur | Full Stack Engineer |
 							AI-Powered Development Engineer
 						</p>
 						<div className="flex justify-center space-x-4 animate-fade-in-up animation-delay-600">
@@ -458,6 +459,7 @@ export default function Portfolio() {
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-12">
 							<Sspot1Component />
 							<PortfolioCarousel items={item} />
+							<PpointComponent/>
 							<RagComponent />
 							<BEasycomponent />
 							
