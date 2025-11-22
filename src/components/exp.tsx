@@ -50,7 +50,7 @@ export default function ExpComponent() {
 
   
 <div className="bg-white mt-10 p-6 rounded-lg shadow-lg border-l-4 border-black">
-    <h3 className="text-2xl font-semibold mb-2 font-[family-name:var(--Poppins-SemiBold)] text-gray-900">
+<h3 className="text-2xl font-semibold mb-2 font-[family-name:var(--Poppins-SemiBold)] text-gray-900">
     Frontend-Focused Full Stack Engineer
     </h3>
     <h4 className="text-xl mb-4 font-[family-name:var(--Poppins-SemiBold)] text-black">
@@ -75,6 +75,40 @@ export default function ExpComponent() {
             <strong>{`Integrated AI-powered tooling`}</strong>{`into the development lifecycle to automate boilerplate, enhance code robustness, and improve test coverage, contributing to a higher-quality and more resilient codebase.`} 
         </li>
     </ul>
+</div>
+
+<div className="bg-white mt-10 p-6 rounded-lg shadow-lg border-l-4 border-black">
+  
+
+    <h3 className="text-2xl font-semibold mb-2 font-[family-name:var(--Poppins-SemiBold)] text-gray-900">
+    Full Stack Engineer
+    </h3>
+    <h4 className="text-xl mb-4 font-[family-name:var(--Poppins-SemiBold)] text-black">
+       Ppoint | Users Interface | Admin Portal
+    </h4>
+
+  
+
+    <ul className="list-disc list-inside space-y-2 text-gray-800 font-[family-name:var(--Poppins-Regular)]">
+        <li>
+         {`Founded and spearheading the end-to-end development of of Ppoint, an Express Prisma ORM, React.js on Next.js full-stack Real Estate platform, from the initial concept through to the current deployment phase`}
+        </li>
+        <li>
+          {`Architected and engineered the entire technical stack, designing for scalability, security, and a responsive cross-platform user experience that significantly enhanced client engagement`}
+        </li>
+      
+        <li>
+          {`Pioneered the adoption of AI-driven development tools, accelerating development cycles and improving code quality significantly.`}
+        </li>
+        <li>
+          {`Established and enforced engineering best practices, CI/CD pipelines, and security protocols, acting as the sole technical decision-maker and ensuring robust, maintainable codebases.`}
+      
+        </li>
+        <li>
+          {`Managed all aspects of the project lifecycle, from concept ideation to the current deployment phase with a clear picure on how the post-launch support phase would look like, as the sole lead developer and project engineer ensuring timely delivery and adherence to best practices.`}
+      
+        </li>
+      </ul>
 </div>
   </div>
 	);
