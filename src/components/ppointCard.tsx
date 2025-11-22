@@ -59,12 +59,12 @@ export default function PpointComponent() {
           Ppoint
         </h3>
         <p className="text-gray-700 mb-4 font-[family-name:var(--Poppins-Regular)]">
-          A full-stack progressive web application that enables landlords, clients and agents management ther real esate affairs
+          A full-stack progressive web application that enables landlords, clients and agents management through the real esate sphere
         </p>
-        <p className="text-gray-700 mb-1 font-[family-name:var(--Poppins-Regular)]"> {`Enable Landlords manage there listings`}</p>
+        {/* <p className="text-gray-700 mb-1 font-[family-name:var(--Poppins-Regular)]"> {`Enable Landlords manage there listings`}</p>
         <p className="text-gray-700 mb-1 font-[family-name:var(--Poppins-Regular)]"> {`Enable Agents post properties`}</p>
         <p className="text-gray-700 mb-1 font-[family-name:var(--Poppins-Regular)]">{`Streamline the process of searching for the perfect properties by clients`}</p>
-        
+         */}
         <div className="flex flex-wrap gap-2">
           <div className="p-6">
       
