@@ -217,14 +217,15 @@ export default function AboutComponent() {
                 <div className="flex items-center gap-3 mb-6">
                   <span className="text-4xl">🌍</span>
                   <h3 className="text-2xl md:text-3xl font-[family-name:var(--Poppins-Bold)]">
-                    Building Africa's Digital Infrastructure
+                    {`Building Africa's Digital Infrastructure`}
+                    
                   </h3>
                 </div>
 
                 <p className="text-lg text-gray-300 mb-8 border-l-4 border-white pl-6 leading-relaxed">
-                  My portfolio isn't a collection of disconnected projects—it's a strategic roadmap. 
+                {`My portfolio isn't a collection of disconnected projects—it's a strategic roadmap. 
                   Each platform is a foundational module of a grander vision: a unified digital 
-                  ecosystem tailored to Africa's unique economic landscape.
+                  ecosystem tailored to Africa's unique economic landscape.`} 
                 </p>
 
                 {/* Platform Cards */}
@@ -459,7 +460,7 @@ export default function AboutComponent() {
       {/* FOOTER */}
       <div className="mt-12 pt-8 border-t border-gray-200 text-center">
         <p className="text-gray-500 text-sm italic">
-          "The best code is code that solves real problems for real people."
+        {`"The best code is code that solves real problems for real people."`} 
         </p>
         <p className="text-gray-400 text-xs mt-2">
           Systems architecture influenced by Urban & Regional Planning background

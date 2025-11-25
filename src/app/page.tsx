@@ -382,8 +382,7 @@ export default function Portfolio() {
 									: "translate-x-10 opacity-0"
 							}`}
 						>
-							Tech Entrepreneur | Full Stack Engineer |
-							AI-Powered Development Engineer
+							Full-Stack Engineer & Technical Co-Founder
 						</p>
 						<div className="flex justify-center space-x-4 animate-fade-in-up animation-delay-600">
 							<div
