@@ -56,7 +56,7 @@ export default function RagComponent() {
 			<div className="p-6">
 				<h3 className="text-xl font-semibold mb-2"> Sspot1 Analytic</h3>
 				<p className="text-gray-700 mb-4">
-					A standalone React Retrieval-augmented generation (RAG) Application enhancing the way both vendors and clients interact with their work environment through the analytical insight provided to them  linked to the SSpot1 ecosystem.
+				The Intelligence Layer. A production-ready RAG Retrieval-Augmented Generation architecture that empowers vendors with natural language business intelligence. By integrating Pinecone Vector DB and LangChain, this module transforms raw ecosystem data into actionable insights, enabling users to query their business performance conversationally.
 				</p>
 				<div className="flex flex-wrap gap-2">
 					<div className="p-6">

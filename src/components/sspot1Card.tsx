@@ -59,8 +59,7 @@ export default function Sspot1Component() {
 					Sspot1
 				</h3>
 				<p className="text-gray-700 mb-4 font-[family-name:var(--Poppins-Regular)]">
-					A full-stack progressive web application  connecting vendors with clients,
-					revolutionizing service procurement which serves as a triple-purpose hub enabling vendors to
+				 A strictly typed NoSQL platform revolutionizing the informal sector service procurement which serves as a triple-purpose hub enabling vendors to
 				</p>
 				<p className="text-gray-700 mb-1 font-[family-name:var(--Poppins-Regular)]"> {` offer repair, maintenance, and specialized services to clients`}</p>
 				<p className="text-gray-700 mb-1 font-[family-name:var(--Poppins-Regular)]"> {`post job openings for skilled peers`}</p>

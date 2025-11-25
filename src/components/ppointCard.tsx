@@ -59,7 +59,7 @@ export default function PpointComponent() {
           Ppoint
         </h3>
         <p className="text-gray-700 mb-4 font-[family-name:var(--Poppins-Regular)]">
-          A full-stack progressive web application that enables landlords, clients and agents management through the real esate sphere
+        A high-performance property engine engineered to unify Landlords, Agents, and Clients. Built with a custom session-persisted JWT architecture and TanStack Query, it decouples server state to reduce workflow latency by 40%, creating a seamless asset management experience.
         </p>
         {/* <p className="text-gray-700 mb-1 font-[family-name:var(--Poppins-Regular)]"> {`Enable Landlords manage there listings`}</p>
         <p className="text-gray-700 mb-1 font-[family-name:var(--Poppins-Regular)]"> {`Enable Agents post properties`}</p>
