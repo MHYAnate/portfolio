@@ -35,7 +35,7 @@ export default function AboutComponent() {
           </span>
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          Product-obsessed engineer specializing in the modern JavaScript ecosystem. 
+        Product-Driven engineer specializing in the modern JavaScript ecosystem. 
           I architect high-performance applications that deliver measurable business outcomes.
         </p>
       </div>
