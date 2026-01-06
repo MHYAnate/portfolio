@@ -181,10 +181,10 @@ export default function ExpComponent() {
           Sspot1 Ventures |
           <a
             className="text-xl mb-2 font-[family-name:var(--Poppins-Regular)]"
-            href="https://www.sspot1.com"
+            href="https://sspot1.vercel.app"
           >
             {" "}
-            www.sspot1.com
+            https://sspot1.vercel.app
           </a>
         </h4>
         <p className="text-sm text-gray-600 mb-4 font-[family-name:var(--Poppins-Regular)]">
