@@ -37,7 +37,7 @@ export default function ApiComponent() {
       APIs & Services
       </h3>
       <div className="flex flex-wrap gap-2">
-        {["Paystack (Payments)", "Cloudinary (Media Processing)", "Resend (Transactional Email)"].map(
+        {[ "Cloudinary (Media Processing)", "Resend (Transactional Email)"].map(
           (skill, index) => (
             <span
               ref={(el: HTMLDivElement | null) => {
