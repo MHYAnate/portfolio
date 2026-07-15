@@ -73,25 +73,10 @@ export default function SureShopsComponent() {
           A dynamic e-commerce discovery ecosystem designed to bridge the gap between merchants and consumers through highly optimized storefront architectures.
         </p>
         
-        <ul className="space-y-2 mb-6 text-sm text-gray-600">
-          <li className="flex items-start">
-            <span className="text-green-500 mr-2">✓</span>
-            High-performance product discovery and indexing.
-          </li>
-          <li className="flex items-start">
-            <span className="text-green-500 mr-2">✓</span>
-            Secure transactional pipelines and cart management.
-          </li>
-          <li className="flex items-start">
-            <span className="text-green-500 mr-2">✓</span>
-            Seamless integration with broader Omni-Application architecture.
-          </li>
-        </ul>
+       
         
         <div className="mt-auto pt-6 border-t border-gray-100">
-          <h4 className="text-xs uppercase tracking-wider text-gray-400 mb-3 font-[family-name:var(--Poppins-SemiBold)]">
-            Technologies Used
-          </h4>
+         
           <div className="flex flex-wrap gap-2">
             {techStack.map((skill, index) => (
               <span
