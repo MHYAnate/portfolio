@@ -7,17 +7,17 @@ export default function AboutComponent() {
   const [activeTab, setActiveTab] = useState<"engineering" | "vision" | "philosophy">("engineering");
 
   const metrics = [
-    { value: "40%", label: "Latency Reduction", description: "Via TanStack Query optimistic UI" },
-    { value: "30%", label: "Faster Delivery", description: "Through CI/CD & AI tooling" },
-    { value: "20%", label: "Auth flexibility", description: "Custom auth vs third-party" },
-    // { value: "99.9%", label: "Transaction Success", description: "On payment-critical flows" },
+    { value: "Over 40%", label: "Latency Reduction", description: "Via TanStack Query decoupled state[cite: 1]" },
+    { value: "~30%", label: "Boilerplate Reduction", description: "Through AI-assisted tooling[cite: 1]" },
+    { value: "20%", label: "Cost Reduction", description: "Via bespoke auth architecture[cite: 1]" },
+    { value: "25%", label: "Faster Debugging", description: "Via white-box full-stack diagnostics[cite: 1]" },
   ];
 
   const techStack = {
-    frontend: ["Next.js 15", "React 18", "TypeScript", "TanStack Query", "Redux Toolkit", "Tailwind CSS"],
-    backend: ["Node.js", "Express.js", "PostgreSQL", "Prisma", "Firebase", "REST APIs"],
-    ai: ["OpenAI API", "LangChain", "Pinecone", "RAG Architecture", "Embeddings"],
-    devops: ["Vercel", "GitHub Actions", "CI/CD", "Git", "Cloudinary"],
+    frontend: ["Next.js 16", "React 19", "TypeScript 5", "TanStack Query", "Redux Toolkit", "Tailwind CSS 4", "Zustand"],
+    backend: ["NestJS 11", "Node.js", "Express.js", "PostgreSQL", "MongoDB", "Prisma ORM 6", "Firebase"],
+    ai: ["OpenAI API", "LangChain", "Pinecone", "RAG Architecture"],
+    devops: ["Vercel", "MongoDB Atlas", "CI/CD Pipelines", "Git/GitHub", "ESLint/Prettier"],
   };
 
   return (
@@ -26,7 +26,7 @@ export default function AboutComponent() {
       {/* HERO SECTION */}
       <div className="text-center mb-12">
         <div className="inline-block px-4 py-1 bg-black text-white text-sm rounded-full mb-4 font-[family-name:var(--Poppins-SemiBold)]">
-          Full-Stack Engineer • Nigeria 🇳🇬 • Open to Remote
+          Full-Stack Product Engineer[cite: 1] • Nigeria 🇳🇬 (Open to Remote)[cite: 1]
         </div>
         <h1 className="text-4xl md:text-5xl font-[family-name:var(--Poppins-Bold)] mb-4 tracking-tight">
           I Build Systems That{" "}
@@ -35,13 +35,12 @@ export default function AboutComponent() {
           </span>
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-        Product-Driven engineer specializing in the modern JavaScript ecosystem. 
-          I architect high-performance applications that deliver measurable business outcomes.
+          {`Product-Driven Full-Stack Engineer with 4 years of experience delivering production-ready applications across agriculture-tech, real estate, and e-commerce domains.[cite: 1]`}
         </p>
       </div>
 
       {/* METRICS GRID */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
         {metrics.map((metric, index) => (
           <div 
             key={index}
@@ -99,19 +98,19 @@ export default function AboutComponent() {
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Custom JWT with session persistence
+                    Custom JWT Auth & Axios Interceptors[cite: 1]
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    RBAC middleware & Bcrypt hashing
+                    Passport-JWT strategy & NestJS Guards[cite: 1]
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Axios interceptors for token refresh
+                    Bcrypt hashing & RBAC Middleware[cite: 1]
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    PostgreSQL + Firebase hybrid approach
+                    PostgreSQL, Prisma ORM 6, & MongoDB[cite: 1]
                   </li>
                 </ul>
               </div>
@@ -127,19 +126,19 @@ export default function AboutComponent() {
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    TanStack Query optimistic updates
+                    TanStack Query optimistic updates[cite: 1]
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Zero-disk I/O media pipelines
+                    Redux Toolkit & createAsyncThunk[cite: 1]
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Intelligent cache invalidation
+                    Zero-disk I/O media pipelines via Multer + Cloudinary[cite: 1]
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Streaming responses for LLMs
+                    Streaming responses for LLMs[cite: 1]
                   </li>
                 </ul>
               </div>
@@ -155,19 +154,19 @@ export default function AboutComponent() {
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Production RAG architectures
+                    Production RAG architectures[cite: 1]
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    LangChain orchestration
+                    LangChain orchestration[cite: 1]
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Pinecone vector search
+                    Pinecone vector database integration[cite: 1]
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    CI/CD with AI-assisted workflows
+                    CI/CD with AI-assisted workflows (Copilot, Cursor)[cite: 1]
                   </li>
                 </ul>
               </div>
@@ -176,7 +175,7 @@ export default function AboutComponent() {
             {/* TECH STACK VISUALIZATION */}
             <div className="bg-gray-900 rounded-xl p-8 text-white">
               <h4 className="font-[family-name:var(--Poppins-Bold)] text-xl mb-6 text-center">
-                Technology Stack
+                Technology Stack[cite: 1]
               </h4>
               <div className="grid md:grid-cols-4 gap-6">
                 {Object.entries(techStack).map(([category, technologies]) => (
@@ -218,7 +217,6 @@ export default function AboutComponent() {
                   <span className="text-4xl">🌍</span>
                   <h3 className="text-2xl md:text-3xl font-[family-name:var(--Poppins-Bold)]">
                     {`Building Africa's Digital Infrastructure`}
-                    
                   </h3>
                 </div>
 
@@ -233,28 +231,27 @@ export default function AboutComponent() {
                   {/* Sspot1 */}
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:border-white/40 transition-colors">
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                        {/* <span className="text-gray-900 font-bold">S1</span> */}
+                      <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center overflow-hidden">
                         <Image
-                                	src={"/1x.jpg"}
-                                  alt={` image`}
-                                  width={400}
-                                  height={300}
-                                  className=" object-cover"
-                                />
+                          src={"/1x.jpg"}
+                          alt={`Sspot1 image`}
+                          width={40}
+                          height={40}
+                          className="object-cover"
+                        />
                       </div>
                       <div>
-                        <h4 className="font-[family-name:var(--Poppins-Bold)] text-lg">Sspot1</h4>
-                        <p className="text-xs text-gray-400">Workforce & Circular Economy</p>
+                        <h4 className="font-[family-name:var(--Poppins-Bold)] text-lg">Sspot1[cite: 1]</h4>
+                        <p className="text-xs text-gray-400">Service Marketplace Platform[cite: 1]</p>
                       </div>
                     </div>
                     <ul className="space-y-2 text-sm text-gray-300">
-                      <li>🛠 Service Marketplace</li>
-                      <li>👥 Talent Network</li>
-                      <li>🔧 P2P Equipment Exchange</li>
+                      <li>🛠 Full-stack Service Delivery[cite: 1]</li>
+                      <li>👥 Firebase React.js ecosystem[cite: 1]</li>
+                      <li>🤖 RAG Analytics Integration[cite: 1]</li>
                     </ul>
                     <a 
-                      href="https://www.sspot1.com" 
+                      href="https://sspot1.vercel.app" 
                       className="inline-flex items-center mt-4 text-sm text-white hover:underline"
                     >
                       Visit Platform →
@@ -264,24 +261,24 @@ export default function AboutComponent() {
                   {/* Ppoint */}
                   <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:border-white/40 transition-colors">
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                      <Image
-                                  src={"/3.png"}
-                                  alt={` image`}
-                                  width={400}
-                                  height={300}
-                                  className=" object-cover"
-                                />
+                      <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center overflow-hidden">
+                        <Image
+                          src={"/3.png"}
+                          alt={`Ppoint image`}
+                          width={40}
+                          height={40}
+                          className="object-cover"
+                        />
                       </div>
                       <div>
-                        <h4 className="font-[family-name:var(--Poppins-Bold)] text-lg">Ppoint</h4>
-                        <p className="text-xs text-gray-400">Real Estate Infrastructure</p>
+                        <h4 className="font-[family-name:var(--Poppins-Bold)] text-lg">Ppoint[cite: 1]</h4>
+                        <p className="text-xs text-gray-400">Admin & User Portals[cite: 1]</p>
                       </div>
                     </div>
                     <ul className="space-y-2 text-sm text-gray-300">
-                      <li>🏠 Property Management</li>
-                      <li>🤝 Multi-stakeholder Portal</li>
-                      <li>📊 Tailored Solutions</li>
+                      <li>🏠 Phone number-based logins[cite: 1]</li>
+                      <li>🤝 Session-persisted JWT architecture[cite: 1]</li>
+                      <li>📊 Express.js & Prisma ORM backend[cite: 1]</li>
                     </ul>
                     <a 
                       href="https://ppoint.vercel.app" 
@@ -299,14 +296,14 @@ export default function AboutComponent() {
                   </h4>
                   <p className="text-gray-300 mb-4">
                     A converged <strong className="text-white">Omni-Application</strong> where 
-                    boundaries between sectors dissolve:
+                    boundaries between domains[cite: 1] dissolve:
                   </p>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {[
-                      { icon: "🏠", label: "Housing", desc: "Lease via Ppoint" },
-                      { icon: "🛒", label: "Commerce", desc: "Buy & sell goods" },
-                      { icon: "🔧", label: "Services", desc: "Hire via Sspot1" },
-                      { icon: "💼", label: "Careers", desc: "Find opportunities" },
+                      { icon: "🌱", label: "Agriculture", desc: "RootAF Ecosystem" },
+                      { icon: "🏬", label: "Commerce", desc: "SureShops Discovery" },
+                      { icon: "🔧", label: "Services", desc: "Sspot1 Marketplace" },
+                      { icon: "🏠", label: "Real Estate", desc: "Ppoint Infrastructure" },
                     ].map((item, i) => (
                       <div key={i} className="text-center p-4 bg-white/5 rounded-lg">
                         <div className="text-2xl mb-2">{item.icon}</div>
@@ -316,7 +313,7 @@ export default function AboutComponent() {
                     ))}
                   </div>
                   <p className="text-center text-white font-[family-name:var(--Poppins-SemiBold)] mt-6 text-lg">
-                    One account. One platform. Total economic integration.
+                    One account. Total integration across agriculture-tech, real estate, and e-commerce.[cite: 1]
                   </p>
                 </div>
               </div>
@@ -338,22 +335,22 @@ export default function AboutComponent() {
                 {[
                   {
                     title: "Product Over Polish",
-                    description: "I optimize for shipping value to users, not for technical elegance in isolation. Every architectural decision answers: 'Does this help users?'",
+                    description: "I optimize for shipping value to users, building high-performance applications that deliver measurable business outcomes.",
                     icon: "🎯",
                   },
                   {
                     title: "Ownership Mentality",
-                    description: "From database schema to deployed feature, I take complete ownership. No 'that's not my job'—if it affects the product, it's my concern.",
+                    description: "From database architecture to deployed feature, I take complete end-to-end ownership. No 'that's not my job'—if it affects the product, it's my concern.",
                     icon: "🔑",
                   },
                   {
                     title: "Systems Thinking",
-                    description: "My Urban Planning background trained me to see interconnections. I design components that scale together, not in isolation.",
+                    description: "My B.Tech in Urban and Regional Planning trained me to see interconnections, applying spatial analysis principles to complex software architecture problems.[cite: 1]",
                     icon: "🧠",
                   },
                   {
                     title: "Continuous Learning",
-                    description: "Currently deep-diving into distributed systems and Kubernetes. The best engineers are perpetual students.",
+                    description: "Currently deep-diving into distributed systems, AI architecture, and state management patterns. The best engineers are perpetual students.[cite: 1]",
                     icon: "📚",
                   },
                 ].map((principle, index) => (
@@ -385,23 +382,23 @@ export default function AboutComponent() {
                     {[
                       {
                         label: "Immediate Impact",
-                        detail: "Production-ready code from day one. I've shipped real products, not just tutorials.",
+                        detail: "Production-ready code from day one. I've shipped real platforms across multiple tech domains.",
                       },
                       {
                         label: "Full-Stack Fluency",
-                        detail: "Comfortable anywhere in the stack. Frontend today, database optimization tomorrow.",
+                        detail: "Comfortable anywhere in the stack. Frontend Next.js today, Node.js/NestJS database optimization tomorrow.[cite: 1]",
                       },
                       {
                         label: "Business Awareness",
-                        detail: "As a founder, I understand code exists to solve business problems.",
+                        detail: "As a founder and product engineer, I understand code exists to solve business problems.[cite: 1]",
                       },
                       {
                         label: "Clear Communication",
-                        detail: "I document decisions, write clear PRs, and explain tech to non-tech stakeholders.",
+                        detail: "I establish CI/CD pipelines, enforce code review standards, and clearly explain tech to non-tech stakeholders.[cite: 1]",
                       },
                       {
                         label: "Growth Trajectory",
-                        detail: "Actively preparing for senior-level challenges with system design deep-dives.",
+                        detail: "Actively engaging in continuous professional development with a focus on Al Architecture and Distributed Systems.[cite: 1]",
                       },
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-4">
@@ -434,12 +431,12 @@ export default function AboutComponent() {
                       📧 Email Me
                     </a>
                     <a
-                      href="https://www.linkedin.com/in/mohammed-hayatudeen-yusuf-04804a299"
+                      href="https://www.linkedin.com/in/mohammed-hayatudeen-yusuf-anate-491113357/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="px-6 py-3 bg-white border-2 border-gray-900 text-gray-900 rounded-full text-sm font-[family-name:var(--Poppins-SemiBold)] hover:bg-gray-50 transition-colors"
                     >
-                      💼 LinkedIn
+                      💼 LinkedIn[cite: 1]
                     </a>
                     <a
                       href="https://github.com/mhyanate"
@@ -447,7 +444,7 @@ export default function AboutComponent() {
                       rel="noopener noreferrer"
                       className="px-6 py-3 bg-white border-2 border-gray-900 text-gray-900 rounded-full text-sm font-[family-name:var(--Poppins-SemiBold)] hover:bg-gray-50 transition-colors"
                     >
-                      🐙 GitHub
+                      🐙 GitHub[cite: 1]
                     </a>
                   </div>
                 </div>
@@ -463,7 +460,7 @@ export default function AboutComponent() {
         {`"The best code is code that solves real problems for real people."`} 
         </p>
         <p className="text-gray-400 text-xs mt-2">
-          Systems architecture influenced by Urban & Regional Planning background
+          Applied systems-thinking and spatial analysis principles to complex software architecture problems.[cite: 1]
         </p>
       </div>
 
