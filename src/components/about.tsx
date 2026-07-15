@@ -35,7 +35,7 @@ export default function AboutComponent() {
           </span>
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          {`Product-Driven Full-Stack Engineer with 4 years of experience delivering production-ready applications across agriculture-tech, real estate, and e-commerce domains.[cite: 1]`}
+          {`Product-Driven Full-Stack Engineer with 4 years of experience delivering production-ready applications across agriculture-tech, real estate, and e-commerce domains`}
         </p>
       </div>
 
@@ -313,7 +313,7 @@ export default function AboutComponent() {
                     ))}
                   </div>
                   <p className="text-center text-white font-[family-name:var(--Poppins-SemiBold)] mt-6 text-lg">
-                    One account. Total integration across agriculture-tech, real estate, and e-commerce.[cite: 1]
+                    One account. Total integration across agriculture-tech, real estate, and e-commerce
                   </p>
                 </div>
               </div>
@@ -345,12 +345,12 @@ export default function AboutComponent() {
                   },
                   {
                     title: "Systems Thinking",
-                    description: "My B.Tech in Urban and Regional Planning trained me to see interconnections, applying spatial analysis principles to complex software architecture problems.[cite: 1]",
+                    description: "My B.Tech in Urban and Regional Planning trained me to see interconnections, applying spatial analysis principles to complex software architecture problems",
                     icon: "🧠",
                   },
                   {
                     title: "Continuous Learning",
-                    description: "Currently deep-diving into distributed systems, AI architecture, and state management patterns. The best engineers are perpetual students.[cite: 1]",
+                    description: "Currently deep-diving into distributed systems, AI architecture, and state management patterns. The best engineers are perpetual students",
                     icon: "📚",
                   },
                 ].map((principle, index) => (
@@ -386,19 +386,19 @@ export default function AboutComponent() {
                       },
                       {
                         label: "Full-Stack Fluency",
-                        detail: "Comfortable anywhere in the stack. Frontend Next.js today, Node.js/NestJS database optimization tomorrow.[cite: 1]",
+                        detail: "Comfortable anywhere in the stack. Frontend Next.js today, Node.js/NestJS database optimization tomorrow",
                       },
                       {
                         label: "Business Awareness",
-                        detail: "As a founder and product engineer, I understand code exists to solve business problems.[cite: 1]",
+                        detail: "As a founder and product engineer, I understand code exists to solve business problems",
                       },
                       {
                         label: "Clear Communication",
-                        detail: "I establish CI/CD pipelines, enforce code review standards, and clearly explain tech to non-tech stakeholders.[cite: 1]",
+                        detail: "I establish CI/CD pipelines, enforce code review standards, and clearly explain tech to non-tech stakeholders",
                       },
                       {
                         label: "Growth Trajectory",
-                        detail: "Actively engaging in continuous professional development with a focus on Al Architecture and Distributed Systems.[cite: 1]",
+                        detail: "Actively engaging in continuous professional development with a focus on Al Architecture and Distributed Systems",
                       },
                     ].map((item, i) => (
                       <li key={i} className="flex items-start gap-4">
@@ -460,7 +460,7 @@ export default function AboutComponent() {
         {`"The best code is code that solves real problems for real people."`} 
         </p>
         <p className="text-gray-400 text-xs mt-2">
-          Applied systems-thinking and spatial analysis principles to complex software architecture problems.[cite: 1]
+          Applied systems-thinking and spatial analysis principles to complex software architecture problems
         </p>
       </div>
 
