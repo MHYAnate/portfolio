@@ -75,7 +75,7 @@ export default function SureShopsComponent() {
         
        
         
-        <div className="mt-auto border-t border-gray-100">
+        <div className=" border-t border-gray-100">
          
           <div className="flex flex-wrap gap-2">
             {techStack.map((skill, index) => (
