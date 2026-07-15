@@ -46,7 +46,7 @@ export default function RootAFComponent() {
       <div className="relative overflow-hidden">
         {/* Replace src with your actual RootAF image path */}
         <Image
-          src={"/rootaf.jpg"} 
+          src={"/rootaf.jpeg"} 
           alt="RootAF Agriculture Ecosystem Platform"
           width={400}
           height={300}
