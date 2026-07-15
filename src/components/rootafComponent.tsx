@@ -54,7 +54,7 @@ export default function RootAFComponent() {
         />
         <div className="absolute inset-0 bg-gray-900/60 backdrop-blur-[2px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
           <a
-            href="https://rootaf.vercel.app" // Update with actual URL
+            href="https://rootaf.ng" // Update with actual URL
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 bg-white text-gray-900 rounded-full font-[family-name:var(--Poppins-SemiBold)] text-sm hover:bg-gray-100 hover:scale-105 transition-all"
