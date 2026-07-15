@@ -82,7 +82,7 @@ export default function RootAFComponent() {
       
         
         {/* TECH STACK SECTION */}
-        <div className="  border-t border-gray-100">
+        <div className="mt-4  border-t border-gray-100">
         
           <div className="flex flex-wrap gap-2">
             {techStack.map((skill, index) => (
