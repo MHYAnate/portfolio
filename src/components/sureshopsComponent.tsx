@@ -61,9 +61,7 @@ export default function SureShopsComponent() {
 				<p className="text-gray-700 mb-4 font-[family-name:var(--Poppins-Regular)]">
         A dynamic e-commerce discovery ecosystem designed to bridge the gap between merchants and consumers through highly optimized storefront architectures.
 				</p>
-				<p className="text-gray-700 mb-1 font-[family-name:var(--Poppins-Regular)]"> {` offer repair, maintenance, and specialized services to clients`}</p>
-				<p className="text-gray-700 mb-1 font-[family-name:var(--Poppins-Regular)]"> {`post job openings for skilled peers`}</p>
-				<p className="text-gray-700 mb-1 font-[family-name:var(--Poppins-Regular)]">{`lease or sell underutilized tools and equipment to fellow vendors—all within a unified platform `}</p>
+			
 				
 				<div className="flex flex-wrap gap-2">
 					<div className="p-6">
