@@ -7,10 +7,10 @@ export default function AboutComponent() {
   const [activeTab, setActiveTab] = useState<"engineering" | "vision" | "philosophy">("engineering");
 
   const metrics = [
-    { value: "Over 40%", label: "Latency Reduction", description: "Via TanStack Query decoupled state[cite: 1]" },
-    { value: "~30%", label: "Boilerplate Reduction", description: "Through AI-assisted tooling[cite: 1]" },
-    { value: "20%", label: "Cost Reduction", description: "Via bespoke auth architecture[cite: 1]" },
-    { value: "25%", label: "Faster Debugging", description: "Via white-box full-stack diagnostics[cite: 1]" },
+    { value: "Over 40%", label: "Latency Reduction", description: "Via TanStack Query decoupled state" },
+    { value: "~30%", label: "Boilerplate Reduction", description: "Through AI-assisted tooling" },
+    { value: "20%", label: "Cost Reduction", description: "Via bespoke auth architecture" },
+    { value: "25%", label: "Faster Debugging", description: "Via white-box full-stack diagnostics" },
   ];
 
   const techStack = {
@@ -26,7 +26,7 @@ export default function AboutComponent() {
       {/* HERO SECTION */}
       <div className="text-center mb-12">
         <div className="inline-block px-4 py-1 bg-black text-white text-sm rounded-full mb-4 font-[family-name:var(--Poppins-SemiBold)]">
-          Full-Stack Product Engineer[cite: 1] • Nigeria 🇳🇬 (Open to Remote)[cite: 1]
+          Full-Stack Product Engineer • Nigeria 🇳🇬 (Open to Remote)
         </div>
         <h1 className="text-4xl md:text-5xl font-[family-name:var(--Poppins-Bold)] mb-4 tracking-tight">
           I Build Systems That{" "}
@@ -98,19 +98,19 @@ export default function AboutComponent() {
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Custom JWT Auth & Axios Interceptors[cite: 1]
+                    Custom JWT Auth & Axios Interceptors
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Passport-JWT strategy & NestJS Guards[cite: 1]
+                    Passport-JWT strategy & NestJS Guards
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Bcrypt hashing & RBAC Middleware[cite: 1]
+                    Bcrypt hashing & RBAC Middleware
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    PostgreSQL, Prisma ORM 6, & MongoDB[cite: 1]
+                    PostgreSQL, Prisma ORM 6, & MongoDB
                   </li>
                 </ul>
               </div>
@@ -126,19 +126,19 @@ export default function AboutComponent() {
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    TanStack Query optimistic updates[cite: 1]
+                    TanStack Query optimistic updates
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Redux Toolkit & createAsyncThunk[cite: 1]
+                    Redux Toolkit & createAsyncThunk
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Zero-disk I/O media pipelines via Multer + Cloudinary[cite: 1]
+                    Zero-disk I/O media pipelines via Multer + Cloudinary
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Streaming responses for LLMs[cite: 1]
+                    Streaming responses for LLMs
                   </li>
                 </ul>
               </div>
@@ -154,19 +154,19 @@ export default function AboutComponent() {
                 <ul className="space-y-2 text-sm text-gray-600">
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Production RAG architectures[cite: 1]
+                    Production RAG architectures
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    LangChain orchestration[cite: 1]
+                    LangChain orchestration
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    Pinecone vector database integration[cite: 1]
+                    Pinecone vector database integration
                   </li>
                   <li className="flex items-start">
                     <span className="text-green-500 mr-2">✓</span>
-                    CI/CD with AI-assisted workflows (Copilot, Cursor)[cite: 1]
+                    CI/CD with AI-assisted workflows (Copilot, Cursor)
                   </li>
                 </ul>
               </div>
@@ -175,7 +175,7 @@ export default function AboutComponent() {
             {/* TECH STACK VISUALIZATION */}
             <div className="bg-gray-900 rounded-xl p-8 text-white">
               <h4 className="font-[family-name:var(--Poppins-Bold)] text-xl mb-6 text-center">
-                Technology Stack[cite: 1]
+                Technology Stack
               </h4>
               <div className="grid md:grid-cols-4 gap-6">
                 {Object.entries(techStack).map(([category, technologies]) => (
@@ -241,14 +241,14 @@ export default function AboutComponent() {
                         />
                       </div>
                       <div>
-                        <h4 className="font-[family-name:var(--Poppins-Bold)] text-lg">Sspot1[cite: 1]</h4>
-                        <p className="text-xs text-gray-400">Service Marketplace Platform[cite: 1]</p>
+                        <h4 className="font-[family-name:var(--Poppins-Bold)] text-lg">Sspot1</h4>
+                        <p className="text-xs text-gray-400">Service Marketplace Platform</p>
                       </div>
                     </div>
                     <ul className="space-y-2 text-sm text-gray-300">
-                      <li>🛠 Full-stack Service Delivery[cite: 1]</li>
-                      <li>👥 Firebase React.js ecosystem[cite: 1]</li>
-                      <li>🤖 RAG Analytics Integration[cite: 1]</li>
+                      <li>🛠 Full-stack Service Delivery</li>
+                      <li>👥 Firebase React.js ecosystem</li>
+                      <li>🤖 RAG Analytics Integration</li>
                     </ul>
                     <a 
                       href="https://sspot1.vercel.app" 
@@ -271,14 +271,14 @@ export default function AboutComponent() {
                         />
                       </div>
                       <div>
-                        <h4 className="font-[family-name:var(--Poppins-Bold)] text-lg">Ppoint[cite: 1]</h4>
-                        <p className="text-xs text-gray-400">Admin & User Portals[cite: 1]</p>
+                        <h4 className="font-[family-name:var(--Poppins-Bold)] text-lg">Ppoint</h4>
+                        <p className="text-xs text-gray-400">Admin & User Portals</p>
                       </div>
                     </div>
                     <ul className="space-y-2 text-sm text-gray-300">
-                      <li>🏠 Phone number-based logins[cite: 1]</li>
-                      <li>🤝 Session-persisted JWT architecture[cite: 1]</li>
-                      <li>📊 Express.js & Prisma ORM backend[cite: 1]</li>
+                      <li>🏠 Phone number-based logins</li>
+                      <li>🤝 Session-persisted JWT architecture</li>
+                      <li>📊 Express.js & Prisma ORM backend</li>
                     </ul>
                     <a 
                       href="https://ppoint.vercel.app" 
@@ -296,7 +296,7 @@ export default function AboutComponent() {
                   </h4>
                   <p className="text-gray-300 mb-4">
                     A converged <strong className="text-white">Omni-Application</strong> where 
-                    boundaries between domains[cite: 1] dissolve:
+                    boundaries between domains dissolve:
                   </p>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                     {[
@@ -436,7 +436,7 @@ export default function AboutComponent() {
                       rel="noopener noreferrer"
                       className="px-6 py-3 bg-white border-2 border-gray-900 text-gray-900 rounded-full text-sm font-[family-name:var(--Poppins-SemiBold)] hover:bg-gray-50 transition-colors"
                     >
-                      💼 LinkedIn[cite: 1]
+                      💼 LinkedIn
                     </a>
                     <a
                       href="https://github.com/mhyanate"
@@ -444,7 +444,7 @@ export default function AboutComponent() {
                       rel="noopener noreferrer"
                       className="px-6 py-3 bg-white border-2 border-gray-900 text-gray-900 rounded-full text-sm font-[family-name:var(--Poppins-SemiBold)] hover:bg-gray-50 transition-colors"
                     >
-                      🐙 GitHub[cite: 1]
+                      🐙 GitHub
                     </a>
                   </div>
                 </div>

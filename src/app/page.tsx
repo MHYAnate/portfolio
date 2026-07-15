@@ -14,6 +14,7 @@ import ContactComponent from "@/components/contact";
 import FooterComponent from "@/components/footer";
 import { PortfolioCarousel } from "@/components/carousel";
 import PpointComponent from "@/components/ppointCard";
+import RootAFComponent from "@/components/rootafComponent";
 
 export default function Portfolio() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -456,6 +457,7 @@ export default function Portfolio() {
 							Featured Projects
 						</h2>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+							<RootAFComponent />
 							<Sspot1Component />
 							<PortfolioCarousel items={item} />
 							<PpointComponent/>
