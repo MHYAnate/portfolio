@@ -68,7 +68,7 @@ export default function RootAFComponent() {
       <div className="p-8 flex-grow flex flex-col">
         <div className="mb-4">
           <div className="inline-block px-3 py-1 bg-black text-white text-xs rounded-full mb-3 font-[family-name:var(--Poppins-SemiBold)]">
-            Agriculture-Tech Ecosystem
+            Agric-Artisan-Tech Ecosystem
           </div>
           <h3 className="text-2xl font-[family-name:var(--Poppins-Bold)] text-gray-900 mb-2">
             RootAF
@@ -76,23 +76,10 @@ export default function RootAFComponent() {
         </div>
         
         <p className="text-gray-600 text-sm leading-relaxed mb-4">
-          A comprehensive digital infrastructure built to bridge the gap in the agricultural supply chain, connecting stakeholders within a unified ecosystem. The platform empowers users to:
+          A comprehensive digital infrastructure built to bridge the gap in the agricultural supply chain amd the Artisan Fabrication and Crafting, connecting stakeholders within a unified ecosystem. The platform empowers users to:
         </p>
         
-        <ul className="space-y-2 mb-6 text-sm text-gray-600">
-          <li className="flex items-start">
-            <span className="text-green-500 mr-2">✓</span>
-            Streamline procurement and distribution of agricultural produce.
-          </li>
-          <li className="flex items-start">
-            <span className="text-green-500 mr-2">✓</span>
-            Manage inventory and track supply chain logistics in real-time.
-          </li>
-          <li className="flex items-start">
-            <span className="text-green-500 mr-2">✓</span>
-            Process secure, role-based transactions across rural and urban markets.
-          </li>
-        </ul>
+      
         
         {/* TECH STACK SECTION */}
         <div className="mt-auto pt-6 border-t border-gray-100">
