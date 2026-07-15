@@ -1,104 +1,132 @@
 "use client";
-
 import Image from "next/image";
-import React, { useEffect, useRef } from "react";
+import React, {useEffect, useRef } from "react";
 
 export default function SureShopsComponent() {
-  const featureRefs = useRef<(HTMLSpanElement | null)[]>([]);
+
+	const featureRefs = useRef<(HTMLDivElement | null)[]>([])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("feature-visible");
+            entry.target.classList.add('feature-visible');
           }
         });
       },
       { threshold: 0.1 }
     );
-
+  
+    // Copy the current refs to a local variable
     const currentRefs = featureRefs.current;
+  
     currentRefs.forEach((ref) => {
       if (ref) observer.observe(ref);
     });
-
+  
     return () => {
+      // Use the local variable in the cleanup
       currentRefs.forEach((ref) => {
         if (ref) observer.unobserve(ref);
       });
     };
   }, []);
 
-  const techStack = [
-    "Next.js", "React", "Redux Toolkit", "Tailwind CSS",
-    "Node.js", "MongoDB", "NestJs",
-    "Git", "Vercel"
-  ];
-
-  return (
-    <div className="bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl hover:border-gray-900 border border-gray-100 group flex flex-col h-full font-[family-name:var(--Poppins-Regular)]">
-      
-      <div className="relative overflow-hidden">
-        <Image
-          src={"/ss.jpeg"} 
-          alt="SureShops Commerce Discovery Platform"
-          width={400}
-          height={300}
-          className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-        <div className="absolute inset-0 bg-gray-900/60 backdrop-blur-[2px] flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300">
-          <a
-            href="https://sureshops.vercel.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 bg-white text-gray-900 rounded-full font-[family-name:var(--Poppins-SemiBold)] text-sm hover:bg-gray-100 hover:scale-105 transition-all"
-          >
-            View Live Platform →
-          </a>
-        </div>
-      </div>
-
-      <div className="p-8 flex-grow flex flex-col">
-        <div className="mb-4">
-          <div className="inline-block px-3 py-1 bg-black text-white text-xs rounded-full mb-3 font-[family-name:var(--Poppins-SemiBold)]">
-            Commerce Discovery
-          </div>
-          <h3 className="text-2xl font-[family-name:var(--Poppins-Bold)] text-gray-900 mb-2">
-            SureShops
-          </h3>
-        </div>
-        
-        <p className="text-gray-600 text-sm leading-relaxed ">
-          A dynamic e-commerce discovery ecosystem designed to bridge the gap between merchants and consumers through highly optimized storefront architectures.
-        </p>
-        
-       
-        
-        <div className="mt-4 border-t border-gray-100">
-         
-          <div className="flex flex-wrap gap-2">
-            {techStack.map((skill, index) => (
-              <span
-                ref={(el: HTMLSpanElement | null) => {
-                  if (el) featureRefs.current[index] = el;
-                }}
-                key={index}
-                className="feature-card bg-gray-100 text-gray-600 px-3 py-1 rounded-full text-xs font-[family-name:var(--Poppins-SemiBold)] hover:bg-gray-900 hover:text-white transition-colors cursor-default"
-                style={{ animationDelay: `${index * 50}ms` }}
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
-        </div>
-      </div>
-
-      <style jsx>{`
-        @keyframes fadeInUp { from { opacity: 0; transform: translateY(15px); } to { opacity: 1; transform: translateY(0); } }
-        .feature-card { opacity: 0; }
-        .feature-visible { animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+	return (
+		<div className="bg-white rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-2xl transform hover:scale-105">
+			<div className="relative">
+				<Image
+					src={"/ss.jpeg"}
+					alt={` image`}
+					width={400}
+					height={300}
+					className="w-full h-48 object-cover"
+				/>
+				<div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+					<a
+						href="https://sureshops.vercel.app"
+						target="_blank"
+						rel="noopener noreferrer"
+						className="text-white font-semibold text-lg hover:underline font-[family-name:var(--Poppins-SemiBold)]"
+					>
+						View Project
+					</a>
+				</div>
+			</div>
+			<div className="p-6">
+				<h3 className="text-xl font-semibold mb-2 font-[family-name:var(--Poppins-SemiBold)]">
+					SureShops
+				</h3>
+				<p className="text-gray-700 mb-4 font-[family-name:var(--Poppins-Regular)]">
+        A dynamic e-commerce discovery ecosystem designed to bridge the gap between merchants and consumers through highly optimized storefront architectures.
+				</p>
+				<p className="text-gray-700 mb-1 font-[family-name:var(--Poppins-Regular)]"> {` offer repair, maintenance, and specialized services to clients`}</p>
+				<p className="text-gray-700 mb-1 font-[family-name:var(--Poppins-Regular)]"> {`post job openings for skilled peers`}</p>
+				<p className="text-gray-700 mb-1 font-[family-name:var(--Poppins-Regular)]">{`lease or sell underutilized tools and equipment to fellow vendors—all within a unified platform `}</p>
+				
+				<div className="flex flex-wrap gap-2">
+					<div className="p-6">
+			
+							<div className="flex flex-wrap gap-2 mt-4">
+								{" "}
+								{[
+							 "ReactJS",
+               "Next.js",
+               "NestJS",
+               "React Hook Form",
+               "Tailwind CSS",
+               "MongoDB",
+               "Axios",
+               "JWT",
+               "web-push",
+               "cloudinary",
+               "bcryptjs",
+               "tanstack/react-query",
+               "recharts",
+               "TypeScript",
+               "Node.js",
+               "Vercel",
+               "Favicon",
+               "Git",
+               "GitHub",
+               "Kimi k2",
+               "Gemini",
+               "Deep Seek",
+               "v0",
+								].map((skill, index) => (
+									<span
+									ref={(el: HTMLDivElement | null) =>{if (el) featureRefs.current[index] = el} } 
+										key={index}
+										className={`bg-gray-200 text-gray-700 px-2 py-1 rounded text-sm  font-[family-name:var(--Poppins-Regular)] `}
+										
+									>
+										{skill}
+									</span>
+								))}
+							</div>
+					
+					</div>
+				</div>
+			</div>
+			<style jsx>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        .feature-card {
+          opacity: 0;
+        }
+        .feature-visible {
+          animation: fadeInUp 0.5s ease-out forwards;
+        }
       `}</style>
-    </div>
-  );
+		</div>
+	);
 }
