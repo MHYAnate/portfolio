@@ -32,7 +32,7 @@ export default function SureShopsComponent() {
 
   const techStack = [
     "Next.js", "React", "Redux Toolkit", "Tailwind CSS",
-    "Node.js", "PostgreSQL", "Prisma ORM", "Stripe API",
+    "Node.js", "MongoDB", "NestJs",
     "Git", "Vercel"
   ];
 
