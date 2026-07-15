@@ -15,6 +15,7 @@ import FooterComponent from "@/components/footer";
 import { PortfolioCarousel } from "@/components/carousel";
 import PpointComponent from "@/components/ppointCard";
 import RootAFComponent from "@/components/rootafComponent";
+import SureShopsComponent from "@/components/sureshopsComponent";
 
 export default function Portfolio() {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -458,9 +459,10 @@ export default function Portfolio() {
 						</h2>
 						<div className="grid grid-cols-1 md:grid-cols-2 gap-12">
 							<RootAFComponent />
+							<PpointComponent/>
 							<Sspot1Component />
 							<PortfolioCarousel items={item} />
-							<PpointComponent/>
+							<SureShopsComponent />
 							<RagComponent />
 							<BEasycomponent />
 							
