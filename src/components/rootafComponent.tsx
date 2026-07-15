@@ -75,14 +75,14 @@ export default function RootAFComponent() {
           </h3>
         </div>
         
-        <p className="text-gray-600 text-sm leading-relaxed mb-4">
-          A comprehensive digital infrastructure built to bridge the gap in the agricultural supply chain and the Artisan Fabrication and Crafting, connecting stakeholders within a unified ecosystem. The platform empowers users to:
+        <p className="text-gray-600 text-sm leading-relaxed ">
+          A comprehensive digital infrastructure built to bridge the gap in the agricultural supply chain and the Artisan Fabrication and Crafting, connecting stakeholders within a unified platform. It empowers farmers, artisans, and consumers by providing tools for efficient production, distribution, and market access.
         </p>
         
       
         
         {/* TECH STACK SECTION */}
-        <div className="mt-auto pt-6 border-t border-gray-100">
+        <div className="mt-auto  border-t border-gray-100">
         
           <div className="flex flex-wrap gap-2">
             {techStack.map((skill, index) => (

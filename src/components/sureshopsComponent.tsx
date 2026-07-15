@@ -69,13 +69,13 @@ export default function SureShopsComponent() {
           </h3>
         </div>
         
-        <p className="text-gray-600 text-sm leading-relaxed mb-4">
+        <p className="text-gray-600 text-sm leading-relaxed ">
           A dynamic e-commerce discovery ecosystem designed to bridge the gap between merchants and consumers through highly optimized storefront architectures.
         </p>
         
        
         
-        <div className="mt-auto pt-6 border-t border-gray-100">
+        <div className="mt-auto border-t border-gray-100">
          
           <div className="flex flex-wrap gap-2">
             {techStack.map((skill, index) => (
